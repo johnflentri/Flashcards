@@ -49,7 +49,11 @@ function submitDutch() {
 }
 
 function showAnswerDutch() {
-    document.getElementById("showAnswerDutchP").innerHTML = flashcardsDutch[randomCardNumberDutch].answer;
+    if (document.getElementById("randomQuestionDutch").innerHTML == flashcardsDutch[randomCardNumberDutch].question) {
+        document.getElementById("showAnswerDutchP").innerHTML = flashcardsDutch[randomCardNumberDutch].answer;
+    } else {
+        alert("You need to generate a word first!");
+    }
 }
 
 function getNewDutch() {
@@ -58,7 +62,12 @@ function getNewDutch() {
 }
 
 function submitQDutch() {
-    flashcardsDutch.push({ id: flashcardsDutch.length + 1, question: newQDutch.value, answer: newADutch.value });
+    if (newQDutch.value !== "" && newADutch.value !== "") {
+        flashcardsDutch.push({ id: flashcardsDutch.length + 1, question: newQDutch.value, answer: newADutch.value });
+        document.getElementById("clearDutchSubmit").innerHTML = "<input type=text id=newQDutch class=form-med placeholder=question /><input type=text id=newADutch class=form-med placeholder=answer /><button id=submitQDutch class=button med-btn onclick=submitQDutch()>Add question</button>";
+    } else {
+        alert("Make sure you have added a question and an answer to the corresponding boxes.");
+    }
 }
 
 function removeQDutch() {
@@ -98,52 +107,61 @@ function randomEqMathsB() {
     }
 }
 
-    function submitMathsB() {
-        if (document.getElementById("randomQuestionMathsB").innerHTML == flashcardsMathsB[randomCardNumberMathsB].question && inputMathsB.value == flashcardsMathsB[randomCardNumberMathsB].answer) {
-            document.getElementById("resultMathsBP").innerHTML = "Correct!";
-        } else if (document.getElementById("randomQuestionMathsB").innerHTML == flashcardsMathsB[randomCardNumberMathsB].question && inputMathsB.value !== flashcardsMathsB[randomCardNumberMathsB].answer) {
-            document.getElementById("resultMathsBP").innerHTML = "Incorrect.";
-        } else {
-            alert("You need to generate an equation first!")
-        }
+function submitMathsB() {
+    if (document.getElementById("randomQuestionMathsB").innerHTML == flashcardsMathsB[randomCardNumberMathsB].question && inputMathsB.value == flashcardsMathsB[randomCardNumberMathsB].answer) {
+        document.getElementById("resultMathsBP").innerHTML = "Correct!";
+    } else if (document.getElementById("randomQuestionMathsB").innerHTML == flashcardsMathsB[randomCardNumberMathsB].question && inputMathsB.value !== flashcardsMathsB[randomCardNumberMathsB].answer) {
+        document.getElementById("resultMathsBP").innerHTML = "Incorrect.";
+    } else {
+        alert("You need to generate an equation first!")
     }
+}
 
-    function showAnswerMathsB() {
+function showAnswerMathsB() {
+    if (document.getElementById("randomQuestionMathsB").innerHTML == flashcardsMathsB[randomCardNumberMathsB].question) {
         document.getElementById("showAnswerMathsBP").innerHTML = flashcardsMathsB[randomCardNumberMathsB].answer;
+    } else {
+        alert("You need to generate an equation first!");
     }
+}
 
-    function getNewMathsBAdd() {
-        flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[0] + maths2) });
-        updateTotalMathsB();
-    }
+function getNewMathsBAdd() {
+    flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[0] + maths2) });
+    updateTotalMathsB();
+}
 
-    function getNewMathsBSubtract() {
-        flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[1] + maths2) });
-        updateTotalMathsB();
-    }
+function getNewMathsBSubtract() {
+    flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[1] + maths2) });
+    updateTotalMathsB();
+}
 
-    function getNewMathsBMultiply() {
-        flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[2] + maths2) });
-        updateTotalMathsB();
-    }
+function getNewMathsBMultiply() {
+    flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[2] + maths2) });
+    updateTotalMathsB();
+}
 
-    function getNewMathsBDivide() {
-        flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: eval((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 8) + 2)) + mathsOperator[3] + maths2, answer: maths1 });
-        updateTotalMathsB();
-    }
+function getNewMathsBDivide() {
+    flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: eval((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 8) + 2)) + mathsOperator[3] + maths2, answer: maths1 });
+    updateTotalMathsB();
+}
 
-    function submitQMathsB() {
+function submitQMathsB() {
+    if (newQMathsB.value !== "" && newAMathsB.value !== "") {
         flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: newQMathsB.value, answer: newAMathsB.value });
+        document.getElementById("clearMathsBSubmit").innerHTML = "<input type=text id=newQMathsB class=form-med placeholder=question /><input type=text id=newAMathsB class=form-med placeholder=answer /><button id=submitQMathsB class=button med-btn onclick=submitQMathsB()>Add question</button>";
+    } else {
+        alert("Make sure you have added a question and an answer to the corresponding boxes.");
     }
+}
 
-    function removeQMathsB() {
-        if (document.getElementById("randomQuestionMathsB").innerHTML == flashcardsMathsB[randomCardNumberMathsB].question) {
-            flashcardsMathsB.splice(randomCardNumberMathsB, 1);
-            document.getElementById("randomQuestionMathsI").innerHTML = "<p id=randomQuestionMathsI><br></p>";
-            document.getElementById("clearTextMathsI").innerHTML = "<input type=text id=inputMathsI class=form-med placeholder=answer /><button class=button med-btn onclick=submitMathsI()>Submit answer</button>";
-            document.getElementById("resultMathsIP").innerHTML = "<p id=resultMathsIP><br></p>";
-            document.getElementById("showAnswerMathsIP").innerHTML = "<p id=showAnswerMathsIP><br></p>";
-        } else {
-            alert("You need to generate a question first!");
-        }
+function removeQMathsB() {
+    if (document.getElementById("randomQuestionMathsB").innerHTML == flashcardsMathsB[randomCardNumberMathsB].question) {
+        flashcardsMathsB.splice(randomCardNumberMathsB, 1);
+        document.getElementById("randomQuestionMathsI").innerHTML = "<p id=randomQuestionMathsI><br></p>";
+        document.getElementById("clearTextMathsI").innerHTML = "<input type=text id=inputMathsI class=form-med placeholder=answer /><button class=button med-btn onclick=submitMathsI()>Submit answer</button>";
+        document.getElementById("resultMathsIP").innerHTML = "<p id=resultMathsIP><br></p>";
+        document.getElementById("showAnswerMathsIP").innerHTML = "<p id=showAnswerMathsIP><br></p>";
+    } else {
+        alert("You need to generate a question first!");
     }
+}

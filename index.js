@@ -11,6 +11,19 @@ let flashcardsDutch = [
     { id: 10, question: 'easy', answer: 'gemakkelijk' },
 ]
 
+let flashcardsDutchNew = [
+    { id: 1, question: 'weather', answer: 'weer' },
+    { id: 2, question: 'cheers', answer: 'proost' },
+    { id: 3, question: 'flower', answer: 'bloem' },
+    { id: 4, question: 'lightning', answer: 'bliksem' },
+    { id: 5, question: 'celebrate', answer: 'vieren' },
+    { id: 6, question: 'prince', answer: 'prins' },
+    { id: 7, question: 'pigeon', answer: 'duif' },
+    { id: 8, question: 'groceries', answer: 'boodschappen' },
+    { id: 9, question: 'sunset', answer: 'zonsondergang' },
+    { id: 10, question: 'ice cream', answer: 'ijsje' },
+]
+
 let randomCardNumberDutch = Math.floor(Math.random() * flashcardsDutch.length)
 
 function randomWordDutch() {
@@ -20,4 +33,9 @@ function randomWordDutch() {
 
 function showAnswerDutch() {
     document.getElementById("showAnswerDutchP").innerHTML = flashcardsDutch[randomCardNumberDutch].answer;
+}
+
+function getNewDutch() {
+    flashcardsDutch.push(flashcardsDutchNew[0])
+    flashcardsDutchNew.shift(flashcardsDutchNew)
 }

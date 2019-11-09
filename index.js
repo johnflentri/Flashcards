@@ -31,6 +31,16 @@ function randomWordDutch() {
     document.getElementById("randomQuestionDutch").innerHTML = flashcardsDutch[randomCardNumberDutch].question;
 }
 
+function submitDutch() {
+    if (document.getElementById("randomQuestionDutch").innerHTML == flashcardsDutch[randomCardNumberDutch].question && inputDutch.value == flashcardsDutch[randomCardNumberDutch].answer) {
+        document.getElementById("resultDutchP").innerHTML = "Correct!";
+    } else if (document.getElementById("randomQuestionDutch").innerHTML == flashcardsDutch[randomCardNumberDutch].question && inputDutch.value !== flashcardsDutch[randomCardNumberDutch].answer) {
+        document.getElementById("resultDutchP").innerHTML = "Incorrect.";
+    } else {
+        alert("You need to generate a word first!")
+    }
+}
+
 function showAnswerDutch() {
     document.getElementById("showAnswerDutchP").innerHTML = flashcardsDutch[randomCardNumberDutch].answer;
 }
@@ -68,6 +78,16 @@ let randomCardNumberMathsB = Math.floor(Math.random() * flashcardsMathsB.length)
 function randomEqMathsB() {
     randomCardNumberMathsB = Math.floor(Math.random() * flashcardsMathsB.length);
     document.getElementById("randomQuestionMathsB").innerHTML = flashcardsMathsB[randomCardNumberMathsB].question;
+}
+
+function submitMathsB() {
+    if (document.getElementById("randomQuestionMathsB").innerHTML == flashcardsMathsB[randomCardNumberMathsB].question && inputMathsB.value == flashcardsMathsB[randomCardNumberMathsB].answer) {
+        document.getElementById("resultMathsBP").innerHTML = "Correct!";
+    } else if (document.getElementById("randomQuestionMathsB").innerHTML == flashcardsMathsB[randomCardNumberMathsB].question && inputMathsB.value !== flashcardsMathsB[randomCardNumberMathsB].answer) {
+        document.getElementById("resultMathsBP").innerHTML = "Incorrect.";
+    } else {
+        alert("You need to generate an equation first!")
+    }
 }
 
 function showAnswerMathsB() {

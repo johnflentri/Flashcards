@@ -39,3 +39,7 @@ function getNewDutch() {
     flashcardsDutch.push(flashcardsDutchNew[0])
     flashcardsDutchNew.shift(flashcardsDutchNew)
 }
+
+function submitQDutch() {
+    flashcardsDutch.push({ id: flashcardsDutch.length + 1, question: newQDutch.value, answer: newADutch.value });
+}

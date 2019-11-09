@@ -18,3 +18,6 @@ function randomWordDutch() {
     document.getElementById("randomQuestionDutch").innerHTML = flashcardsDutch[randomCardNumberDutch].question;
 }
 
+function showAnswerDutch() {
+    document.getElementById("showAnswerDutchP").innerHTML = flashcardsDutch[randomCardNumberDutch].answer;
+}

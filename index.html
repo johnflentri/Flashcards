@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,41 @@
     <title>Flashcard App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="intro-banner">
         <h3>Welcome to the Flashcard App</h3>
     </div>
-    <div class="flashcard_container">
-        <div class="flashcard">
-            <h3>Translate this word to Dutch</h3>
-            <button id="randomWordDutch" onclick="randomWordDutch()">Randomise</button>
-            <p id="randomQuestionDutch"></p>
-            <button id="showAnswerDutch" onclick="showAnswerDutch()">Flip card/Show answer</button>
-            <p id="showAnswerDutchP"></p>
-            <button id="getNewDutch" onclick="getNewDutch()">Get new word</button>
-            <input type="text" id="newQDutch" placeholder="question" /><input type="text" id="newADutch" placeholder="answer" /><button id="submitQDutch" onclick="submitQDutch()">Add question</button>
-            <button id="removeQDutch" onclick="removeQDutch()">Remove this question from quiz</button>
+    <div class="wrapper">
+        <div class="test-containers">
+            <div id=dutch class="dutch-test">
+                <h3>Translate this word to Dutch</h3>
+                <button id="randomWordDutch" onclick="randomWordDutch()">Randomise</button>
+                <p id="randomQuestionDutch"></p>
+                <button id="showAnswerDutch" onclick="showAnswerDutch()">Show answer</button>
+                <p id="showAnswerDutchP"></p>
+                <button id="getNewDutch" onclick="getNewDutch()">Get new word</button>
+                <input type="text" id="newQDutch" placeholder="question" /><input type="text" id="newADutch"
+                    placeholder="answer" /><button id="submitQDutch" onclick="submitQDutch()">Add question</button>
+                <button id="removeQDutch" onclick="removeQDutch()">Remove this question from quiz</button>
+            </div>
+            <br>
+            <div id=mathsB class="mathsB-test">
+                <h3>Mathematics: Beginner</h3>
+                <button id="randomEqMathsB" onclick="randomEqMathsB()">Randomise</button>
+                <p id="randomQuestionMathsB"></p>
+                <button id="showAnswerMathsB" onclick="showAnswerMathsB()">Show answer</button>
+                <p id="showAnswerMathsBP"></p>
+                <button id="getNewMathsB" onclick="getNewMathsBAdd()">Add new +</button> <button id="getNewMathsB"
+                    onclick="getNewMathsBSubtract()">Add new -</button> <button id="getNewMathsB"
+                    onclick="getNewMathsBMultiply()">Add new *</button> <button id="getNewMathsB"
+                    onclick="getNewMathsBDivide()">Add new /</button>
+                <input type="text" id="newQMathsB" placeholder="question" /><input type="text" id="newAMathsB"
+                    placeholder="answer" /><button id="submitQMathsB" onclick="submitQMathsB()">Add question</button>
+                <button id="removeQMathsB" onclick="removeQMathsB()">Remove this question from quiz</button>
+            </div>
         </div>
-    </div>
 </body>
 <script src="index.js"></script>
+
 </html>

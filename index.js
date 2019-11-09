@@ -43,3 +43,9 @@ function getNewDutch() {
 function submitQDutch() {
     flashcardsDutch.push({ id: flashcardsDutch.length + 1, question: newQDutch.value, answer: newADutch.value });
 }
+
+function removeQDutch() {
+    if (document.getElementById("randomQuestionDutch").innerHTML == flashcardsDutch[randomCardNumberDutch].question) {
+        flashcardsDutch.splice(randomCardNumberDutch, 1);
+    }
+}

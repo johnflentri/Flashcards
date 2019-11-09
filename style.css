@@ -1,1 +1,20 @@
-/* Add styles here! Make it look a bit pretty! */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #97b9cc;
+    font-size: 18px;
+    word-spacing: 3px;
+    line-height: 40px;
+}
+
+.intro-banner {
+    height: 50px;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    background-color: #b8d1cf;
+    padding: 15px;
+}

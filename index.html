@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Flashcard App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Flashcards</h1>
+    <div class="intro-banner">
+        <h3>Welcome to the Flashcard App</h3>
+    </div>
     <div class="flashcard_container">
         <div class="flashcard">
-            <h3>Some English Word Here</h3>
-
+            <h3>Translate this word to Dutch</h3>
+            <button id="randomWordDutch" onclick="randomWordDutch()">Randomise</button>
+            <p id="randomQuestionDutch"></p>
             <!-- Pressing this button should show the Dutch word -->
-            <button>Flip card</button>
+            <button>Flip card/Show answer</button>
         </div>
     </div>
 </body>

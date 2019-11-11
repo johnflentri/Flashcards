@@ -8,55 +8,207 @@
     <title>Flashcard App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<a name="top"></a>
 
 <body>
     <div class="intro-banner">
         <h3>Welcome to the Flashcard App</h3>
     </div>
     <div class="wrapper">
+        <br>
         <div class="test-containers">
             <div id=dutch class="dutch-test">
-                <h3>Translate this word to Dutch</h3>
+                <div class="quiz-banner">
+                    <h3>Translate this word to Dutch</h3>
+                </div>
                 <button id="randomWordDutch" class="button big-btn" onclick="randomWordDutch()">Randomise</button>
                 <p id="randomQuestionDutch"><br></p>
                 <div id="clearTextDutch">
-                    <input type="text" id="inputDutch" class="form-med" placeholder="answer" /><button class="button med-btn" onclick="submitDutch()">Submit
-                        answer</button>
+                    <input type="text" id="inputDutch" class="form-med" placeholder="answer" /><button class="button med-btn"
+                        onclick="submitDutch()">Submit answer</button>
                 </div>
                 <p id="resultDutchP"><br></p>
                 <button id="showAnswerDutch" class="button med-btn" onclick="showAnswerDutch()">Show answer</button>
+                <br>
                 <p id="showAnswerDutchP"><br></p>
-                <button id="getNewDutch" class="button med-btn" onclick="getNewDutch()">Get new word</button>
+                <button id="removeQDutch" class="button med-btn" onclick="removeQDutch()">Remove this question from
+                    quiz</button>
+                <button id="getNewDutch" class="button med-btn" onclick="getNewDutch()">Add bonus word</button>
                 <div id="clearDutchSubmit">
                     <input type="text" id="newQDutch" class="form-med" placeholder="question" /><input type="text" id="newADutch" class="form-med"
-                        placeholder="answer" /><button id="submitQDutch" class="button med-btn" onclick="submitQDutch()">Add question</button>
+                        placeholder="answer" /><button id="submitQDutch" class="button med-btn"
+                        onclick="submitQDutch()">Add question</button>
                 </div>
-                <button id="removeQDutch" class="button med-btn" onclick="removeQDutch()">Remove this question from quiz</button>
+                Total questions: <span id="totalQuestionsDutchP"></span>
+            </div>
+            <br>
+            <div id=german class="german-test">
+                <div class="quiz-banner">
+                    <h3>Translate this word to German</h3>
+                </div>
+                <button id="randomWordGerman" class="button big-btn" onclick="randomWordGerman()">Randomise</button>
+                <p id="randomQuestionGerman"><br></p>
+                <div id="clearTextGerman">
+                    <input type="text" id="inputGerman" class="form-med" placeholder="answer" /><button class="button med-btn"
+                        onclick="submitGerman()">Submit answer</button>
+                </div>
+                <p id="resultGermanP"><br></p>
+                <button id="showAnswerGerman" class="button med-btn" onclick="showAnswerGerman()">Show answer</button>
+                <br>
+                <p id="showAnswerGermanP"><br></p>
+                <button id="removeQGerman" class="button med-btn" onclick="removeQGerman()">Remove this question from
+                    quiz</button>
+                <button id="getNewGerman" class="button med-btn" onclick="getNewGerman()">Add bonus word</button>
+                <div id="clearGermanSubmit">
+                    <input type="text" id="newQGerman" class="form-med" placeholder="question" /><input type="text" id="newAGerman" class="form-med"
+                        placeholder="answer" /><button id="submitQGerman" class="button med-btn"
+                        onclick="submitQGerman()">Add
+                        question</button>
+                </div>
+                Total questions: <span id="totalQuestionsGermanP"></span>
+            </div>
+            <br>
+            <div id=indonesian class="indonesian-test">
+                <div class="quiz-banner">
+                    <h3>Translate this word to Indonesian</h3>
+                </div>
+                <button id="randomWordIndonesian" class="button big-btn" onclick="randomWordIndonesian()">Randomise</button>
+                <p id="randomQuestionIndonesian"><br></p>
+                <div id="clearTextIndonesian">
+                    <input type="text" id="inputIndonesian" class="form-med" placeholder="answer" /><button class="button med-btn"
+                        onclick="submitIndonesian()">Submit answer</button>
+                </div>
+                <p id="resultIndonesianP"><br></p>
+                <button id="showAnswerIndonesian" class="button med-btn" onclick="showAnswerIndonesian()">Show answer</button>
+                <br>
+                <p id="showAnswerIndonesianP"><br></p>
+                <button id="removeQIndonesian" class="button med-btn" onclick="removeQIndonesian()">Remove this question from quiz</button>
+                <button id="getNewIndonesian" class="button med-btn" onclick="getNewIndonesian()">Add bonus word</button>
+                <div id="clearIndonesianSubmit">
+                    <input type="text" id="newQIndonesian" class="form-med" placeholder="question" /><input type="text"
+                        id="newAIndonesian" class="form-med" placeholder="answer" /><button id="submitQIndonesian" class="button med-btn"
+                        onclick="submitQIndonesian()">Add question</button>
+                </div>
+                Total questions: <span id="totalQuestionsIndonesianP"></span>
             </div>
             <br>
             <div id=mathsB class="mathsB-test">
-                <h3>Mathematics: Beginner</h3>
+                <div class="quiz-banner">
+                    <h3>Mathematics: Beginner</h3>
+                </div>
                 <button id="randomEqMathsB" class="button big-btn" onclick="randomEqMathsB()">Randomise</button>
                 <p id="randomQuestionMathsB"><br></p>
                 <div id="clearTextMathsB">
-                <input type="text" id="inputMathsB" class="form-med" placeholder="answer" /><button class="button med-btn" onclick="submitMathsB()">Submit
-                    answer</button>
+                    <input type="text" id="inputMathsB" class="form-med" placeholder="answer" /><button class="button med-btn" onclick="submitMathsB()">Submit
+                        answer</button>
                 </div>
                 <p id="resultMathsBP"><br></p>
                 <button id="showAnswerMathsB" class="button med-btn" onclick="showAnswerMathsB()">Show answer</button>
+                <br>
                 <p id="showAnswerMathsBP"><br></p>
-                <button id="getNewMathsB" class="button med-btn" onclick="getNewMathsBAdd()">Add new +</button> <button id="getNewMathsB" class="button med-btn"
-                    onclick="getNewMathsBSubtract()">Add new -</button> <button id="getNewMathsB" class="button med-btn"
-                    onclick="getNewMathsBMultiply()">Add new *</button> <button id="getNewMathsB" class="button med-btn"
-                    onclick="getNewMathsBDivide()">Add new /</button>
-                    <div id="clearMathsBSubmit">
-                <input type="text" id="newQMathsB" class="form-med" placeholder="question" /><input type="text" id="newAMathsB" class="form-med"
-                    placeholder="answer" /><button id="submitQMathsB" class="button med-btn" onclick="submitQMathsB()">Add question</button>
-                </div>
                 <button id="removeQMathsB" class="button med-btn" onclick="removeQMathsB()">Remove this question from quiz</button>
+                <br>
+                <button id="getNewMathsB" class="button med-btn" onclick="getNewMathsBAdd()">Add new +</button> <button id="getNewMathsB" class="button med-btn"
+                onclick="getNewMathsBSubtract()">Add new -</button> <button id="getNewMathsB" class="button med-btn"
+                onclick="getNewMathsBMultiply()">Add new *</button> <button id="getNewMathsB" class="button med-btn"
+                onclick="getNewMathsBDivide()">Add new /</button>
+                <div id="clearMathsBSubmit">
+                    <input type="text" id="newQMathsB" class="form-med" placeholder="question" /><input type="text" id="newAMathsB" class="form-med"
+                        placeholder="answer" /><button id="submitQMathsB" class="button med-btn" onclick="submitQMathsB()">Add
+                        question</button>
+                </div>
+                Total questions: <span id="totalQuestionsMathsBP"></span>
             </div>
+            <br>
+            <div id=mathsI class="mathsI-test">
+                <div class="quiz-banner">
+                    <h3>Mathematics: Intermediate</h3>
+                </div>
+                <button id="randomEqMathsI" class="button big-btn" onclick="randomEqMathsI()">Randomise</button>
+                <p id="randomQuestionMathsI"><br></p>
+                <div id="clearTextMathsI">
+                    <input type="text" id="inputMathsI" class="form-med" placeholder="answer" /><button class="button med-btn" onclick="submitMathsI()">Submit
+                        answer</button>
+                </div>
+                <p id="resultMathsIP"><br></p>
+                <button id="showAnswerMathsI" class="button med-btn" onclick="showAnswerMathsI()">Show answer</button>
+                <br>
+                <p id="showAnswerMathsIP"><br></p>
+                <button id="removeQMathsI" class="button med-btn" onclick="removeQMathsI()">Remove this question from quiz</button>
+                <br>
+                <button id="getNewMathsI" class="button med-btn" onclick="getNewMathsIAdd()">Add new +</button> <button id="getNewMathsI" class="button med-btn"
+                onclick="getNewMathsISubtract()">Add new -</button> <button id="getNewMathsI" class="button med-btn"
+                onclick="getNewMathsIMultiply()">Add new *</button> <button id="getNewMathsI" class="button med-btn"
+                onclick="getNewMathsIDivide()">Add new /</button>
+                <div id="clearMathsISubmit">
+                    <input type="text" id="newQMathsI" class="form-med" placeholder="question" /><input type="text" id="newAMathsI" class="form-med"
+                        placeholder="answer" /><button id="submitQMathsI" class="button med-btn" onclick="submitQMathsI()">Add
+                        question</button>
+                </div>
+                Total questions: <span id="totalQuestionsMathsIP"></span>
+            </div>
+            <br>
+            <div id=mathsE class="mathsE-test">
+                <div class="quiz-banner">
+                    <h3>Mathematics: Expert</h3>
+                </div>
+                <button id="randomEqMathsE" class="button big-btn" onclick="randomEqMathsE()">Randomise</button>
+                <p id="randomQuestionMathsE"><br></p>
+                <div id="clearTextMathsE">
+                    <input type="text" id="inputMathsE" class="form-med" placeholder="answer" /><button class="button med-btn" onclick="submitMathsE()">Submit
+                        answer</button>
+                </div>
+                <p id="resultMathsEP"><br></p>
+                <button id="showAnswerMathsE" class="button med-btn" onclick="showAnswerMathsE()">Show answer</button>
+                <br>
+                <p id="showAnswerMathsEP"><br></p>
+                <button id="removeQMathsE" class="button med-btn" onclick="removeQMathsE()">Remove this question from quiz</button>
+                <br>
+                <button id="getNewMathsE" class="button med-btn" onclick="getNewMathsEAdd()">Add new +</button> <button id="getNewMathsE" class="button med-btn"
+                onclick="getNewMathsESubtract()">Add new -</button> <button id="getNewMathsE" class="button med-btn"
+                onclick="getNewMathsEMultiply()">Add new *</button> <button id="getNewMathsE" class="button med-btn"
+                onclick="getNewMathsEDivide()">Add new /</button>
+                <div id="clearMathsESubmit">
+                    <input type="text" id="newQMathsE" class="form-med" placeholder="question" /><input type="text" id="newAMathsE" class="form-med"
+                        placeholder="answer" /><button id="submitQMathsE" class="button med-btn" onclick="submitQMathsE()">Add
+                        question</button>
+                </div>
+                Total questions: <span id="totalQuestionsMathsEP"></span>
+            </div>
+            <br>
+            <div id=create class="create-test">
+                <div class="quiz-banner">
+                    <h3>Create your own quiz</h3>
+                </div>
+                <button id="randomiseCreate" class="button big-btn" onclick="randomiseCreate()">Randomise</button>
+                <p id="randomQuestionCreate"><br></p>
+                <div id="clearTextCreate">
+                    <input type="text" id="inputCreate" class="form-med" placeholder="answer" /><button class="button med-btn" onclick="submitCreate()">Submit
+                        answer</button>
+                </div>
+                <p id="resultCreateP"><br></p>
+                <button id="showAnswerCreate" class="button med-btn" onclick="showAnswerCreate()">Show answer</button>
+                <br>
+                <p id="showAnswerCreateP"><br></p>
+                <button id="removeQCreate" class="button med-btn" onclick="removeQCreate()">Remove this question from quiz</button>
+                <div id="clearCreateSubmit">
+                    <input type="text" id="newQCreate" class="form-med" placeholder="question" /><input type="text" id="newACreate" class="form-med"
+                        placeholder="answer" /><button id="submitQCreate" class="button med-btn" onclick="submitQCreate()">Add
+                        question</button>
+                </div>
+                Total questions: <span id="totalQuestionsCreateP"></span>
+            </div>
+            <br>
         </div>
+    </div>
+    <div>
+        <footer class="footer">
+            <a href=#top>Back to Top</p>
+        </footer>
+    </div>
 </body>
 <script src="index.js"></script>
+
+</script>
 
 </html>

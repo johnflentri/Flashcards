@@ -29,3 +29,54 @@ body {
     height: 100%;
     text-align: center;
 }
+
+.dutch-test {
+    background-color: #E7EBE0FF;
+    padding: 0px 0px 10px 0px;
+}
+
+.german-test {
+    background-color: #E7EBE0FF;
+    padding: 0px 0px 10px 0px;
+}
+
+.indonesian-test {
+    background-color: #E7EBE0FF;
+    padding: 0px 0px 10px 0px;
+}
+
+.mathsB-test {
+    background-color: #E7EBE0FF;
+    padding: 0px 0px 10px 0px;
+}
+
+.mathsI-test {
+    background-color: #E7EBE0FF;
+    padding: 0px 0px 10px 0px;
+}
+
+.mathsE-test {
+    background-color: #E7EBE0FF;
+    padding: 0px 0px 10px 0px;
+}
+
+.create-test {
+    background-color: #E7EBE0FF;
+    padding: 0px 0px 10px 0px;
+}
+
+.quiz-banner {
+    background-color: #b8d1cf;
+}
+
+.footer {
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    background-color: #b8d1cf;
+}
+
+.footer:hover {
+    color: blue
+}

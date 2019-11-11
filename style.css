@@ -19,9 +19,111 @@ body {
     padding: 15px;
 }
 
+.intro-text h4{
+    background-color: #E7EBE0FF;
+    text-align: center;
+    font-size: 19px;
+}
+
+.intro-text {
+    background-color: #E7EBE0FF;
+    padding: 5px 0px 5px 0px;
+}
+
+.intro-text p {
+    text-indent: 10px;
+}
+
+#mathsExample {
+    text-align: center;
+    text-indent: 0px;
+}
+
 .wrapper {
     margin: 0 auto;
     width: 1000px;;
+}
+
+.quiz-container-text {
+    background-color: #E7EBE0FF;
+    text-align: center;
+    font-size: 19px;
+    padding: 10px 0 10px 0;
+}
+
+.quiz-container1 {
+    background-color: #E7EBE0FF;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0px 0px 12px 0px;
+}
+
+.quiz-container2 {
+    background-color: #E7EBE0FF;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 0px 9px 0px;
+}
+
+.img-dutch {
+    width: 225px;
+    height: 150px;
+    background-image: url(img-folder-retry/flag-netherlands.png);
+    background-size: 100%;
+}
+
+.img-german {
+    width: 225px;
+    height: 150px;
+    background-image: url(img-folder-retry/flag-germany.svg);
+    background-size: 100%;
+}
+
+.img-indonesian {
+    width: 225px;
+    height: 150px;
+    background-image: url(img-folder-retry/flag-indonesia.jpg);
+    background-size: 100%;
+}
+
+.img-mathsB {
+    width: 225px;
+    height: 150px;
+    background-image: url(img-folder-retry/maths.png);
+    background-size: 100%;
+}
+
+.img-mathsI {
+    width: 225px;
+    height: 150px;
+    background-image: url(img-folder-retry/maths.png);
+    background-size: 100%;
+}
+
+.img-mathsE {
+    width: 225px;
+    height: 150px;
+    background-image: url(img-folder-retry/maths.png);
+    background-size: 100%;
+}
+
+.img-create {
+    width: 225px;
+    height: 150px;
+    background-image: url(img-folder-retry/create-test.png);
+    background-size: 100%;
+}
+
+.item p {
+    font-size: 19px;
+}
+
+.quiz-banner {
+    background-color: #b8d1cf;
 }
 
 .test-containers {
@@ -65,8 +167,35 @@ body {
     padding: 0px 0px 10px 0px;
 }
 
-.quiz-banner {
+.button {
+    padding: 4px 4px 4px 4px;
+    border-radius: 12px;
+    border: 2px solid #b8d1cf;
+    font-weight: bold;
+    transition: 0.25s;
     background-color: #b8d1cf;
+    margin: 1px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #73db6a;
+    border: 2px solid #73db6a;
+}
+
+.big-btn {
+    width: 150px;
+    height: 30px;;
+    font-size: 13px;
+    margin: 15px 0px 0px 0px;
+}
+
+.form-med{
+    width: 140px;
+    height: 24px;
+    border: 1px solid #b8d1cf;
+    margin: 2px;
+    text-indent: 2px;
 }
 
 .footer {

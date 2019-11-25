@@ -111,16 +111,20 @@ let randomCardNumberMathsI = Math.floor(Math.random() * flashcardsMathsI.length)
 let randomCardNumberMathsE = Math.floor(Math.random() * flashcardsMathsI.length);
 let randomCardNumberCreate = Math.floor(Math.random() * flashcardsCreate.length);
 
-function randomWordDutch() {
-    if (flashcardsDutch.length >= 1) {
-        randomCardNumberDutch = Math.floor(Math.random() * flashcardsDutch.length);
-        document.getElementById("randomQuestionDutch").innerHTML = flashcardsDutch[randomCardNumberDutch].question;
-        document.getElementById("clearTextDutch").innerHTML = "<input type=text id=inputDutch class=form-med placeholder=answer /><button class=button med-btn onclick=submitDutch()>Submit answer</button>";
-        document.getElementById("resultDutchP").innerHTML = "<p id=resultDutchP><br></p>";
-        document.getElementById("showAnswerDutchP").innerHTML = "<p id=showAnswerDutchP><br></p>";
+function randomiseNow(quizType, questionSet) {
+    if (questionSet.length >= 1) {
+        const randomCard = questionSet[Math.floor(Math.random() * questionSet.length)]
+        document.getElementById(`randomQuestion${quizType}`).innerHTML = randomCard.question;
+        document.getElementById(`clearText${quizType}`).innerHTML = `<input type=text id=input${quizType} class=form-med placeholder=answer /><button class=button med-btn onclick=submit${quizType}()>Submit answer</button>`;
+        document.getElementById(`result${quizType}P`).innerHTML = `<p id=result${quizType}P><br></p>`;
+        document.getElementById(`showAnswer${quizType}P`).innerHTML = `<p id=showAnswer${quizType}P><br></p>`;
     } else {
         alert("There are no questions left! Click the \"Add new word\" button or fill in the forms and add your own questions.")
     }
+}
+
+function randomWordDutch(){
+    randomiseNow('Dutch', flashcardsDutch)
 }
 
 function getNewDutch() {

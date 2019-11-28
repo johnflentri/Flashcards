@@ -1,120 +1,125 @@
 let flashcardsDutch = [
     { id: 1, question: 'good afternoon', answer: 'goedemiddag' },
     { id: 2, question: 'bicycle', answer: 'fiets' },
-    { id: 3, question: 'vacuum cleaner', answer: 'stofzuiger' },
+    // { id: 3, question: 'vacuum cleaner', answer: 'stofzuiger' },
     { id: 4, question: 'year', answer: 'jaar' },
-    { id: 5, question: 'today', answer: 'vandaag' },
-    { id: 6, question: 'tomorrow', answer: 'morgen' },
-    { id: 7, question: 'yesterday', answer: 'gisteren' },
-    { id: 8, question: 'use', answer: 'gebruiken' },
-    { id: 9, question: 'difficult', answer: 'moeilijk' },
-    { id: 10, question: 'easy', answer: 'gemakkelijk' },
+    // { id: 5, question: 'today', answer: 'vandaag' },
+    // { id: 6, question: 'tomorrow', answer: 'morgen' },
+    // { id: 7, question: 'yesterday', answer: 'gisteren' },
+    // { id: 8, question: 'use', answer: 'gebruiken' },
+    // { id: 9, question: 'difficult', answer: 'moeilijk' },
+    // { id: 10, question: 'easy', answer: 'gemakkelijk' },
 ]
 
-let flashcardsDutchNew = [
-    { id: 1, question: 'weather', answer: 'weer' },
-    { id: 2, question: 'cheers', answer: 'proost' },
-    { id: 3, question: 'flower', answer: 'bloem' },
-    { id: 4, question: 'lightning', answer: 'bliksem' },
-    { id: 5, question: 'celebrate', answer: 'vieren' },
-    { id: 6, question: 'prince', answer: 'prins' },
-    { id: 7, question: 'pigeon', answer: 'duif' },
-    { id: 8, question: 'groceries', answer: 'boodschappen' },
-    { id: 9, question: 'sunset', answer: 'zonsondergang' },
-    { id: 10, question: 'ice cream', answer: 'ijsje' },
-]
+// let flashcardsDutchNew = [
+//     { id: 1, question: 'weather', answer: 'weer' },
+//     { id: 2, question: 'cheers', answer: 'proost' },
+//     { id: 3, question: 'flower', answer: 'bloem' },
+//     { id: 4, question: 'lightning', answer: 'bliksem' },
+//     { id: 5, question: 'celebrate', answer: 'vieren' },
+//     { id: 6, question: 'prince', answer: 'prins' },
+//     { id: 7, question: 'pigeon', answer: 'duif' },
+//     { id: 8, question: 'groceries', answer: 'boodschappen' },
+//     { id: 9, question: 'sunset', answer: 'zonsondergang' },
+//     { id: 10, question: 'ice cream', answer: 'ijsje' },
+// ]
 
-let flashcardsGerman = [
-    { id: 1, question: 'good afternoon', answer: 'guten tag' },
-    { id: 2, question: 'bicycle', answer: 'fahrrad' },
-    { id: 3, question: 'vacuum cleaner', answer: 'staubsauger' },
-    { id: 4, question: 'year', answer: 'jahr' },
-    { id: 5, question: 'today', answer: 'heute' },
-    { id: 6, question: 'tomorrow', answer: 'morgen' },
-    { id: 7, question: 'yesterday', answer: 'gestern' },
-    { id: 8, question: 'use', answer: 'verwenden' },
-    { id: 9, question: 'difficult', answer: 'schwierig' },
-    { id: 10, question: 'easy', answer: 'einfach' },
-]
+// let flashcardsGerman = [
+//     { id: 1, question: 'good afternoon', answer: 'guten tag' },
+//     { id: 2, question: 'bicycle', answer: 'fahrrad' },
+//     { id: 3, question: 'vacuum cleaner', answer: 'staubsauger' },
+//     { id: 4, question: 'year', answer: 'jahr' },
+//     { id: 5, question: 'today', answer: 'heute' },
+//     { id: 6, question: 'tomorrow', answer: 'morgen' },
+//     { id: 7, question: 'yesterday', answer: 'gestern' },
+//     { id: 8, question: 'use', answer: 'verwenden' },
+//     { id: 9, question: 'difficult', answer: 'schwierig' },
+//     { id: 10, question: 'easy', answer: 'einfach' },
+// ]
 
-let flashcardsGermanNew = [
-    { id: 1, question: 'weather', answer: 'wetter' },
-    { id: 2, question: 'cheers', answer: 'prost' },
-    { id: 3, question: 'flower', answer: 'blume' },
-    { id: 4, question: 'lightning', answer: 'blitz' },
-    { id: 5, question: 'celebrate', answer: 'feiern' },
-    { id: 6, question: 'prince', answer: 'prinz' },
-    { id: 7, question: 'pigeon', answer: 'taube' },
-    { id: 8, question: 'groceries', answer: 'lebensmittel' },
-    { id: 9, question: 'sunset', answer: 'sonnenuntergang' },
-    { id: 10, question: 'ice cream', answer: 'eiscreme' },
-]
+// let flashcardsGermanNew = [
+//     { id: 1, question: 'weather', answer: 'wetter' },
+//     { id: 2, question: 'cheers', answer: 'prost' },
+//     { id: 3, question: 'flower', answer: 'blume' },
+//     { id: 4, question: 'lightning', answer: 'blitz' },
+//     { id: 5, question: 'celebrate', answer: 'feiern' },
+//     { id: 6, question: 'prince', answer: 'prinz' },
+//     { id: 7, question: 'pigeon', answer: 'taube' },
+//     { id: 8, question: 'groceries', answer: 'lebensmittel' },
+//     { id: 9, question: 'sunset', answer: 'sonnenuntergang' },
+//     { id: 10, question: 'ice cream', answer: 'eiscreme' },
+// ]
 
-let flashcardsIndonesian = [
-    { id: 1, question: 'good afternoon', answer: 'selamat sore' },
-    { id: 2, question: 'bicycle', answer: 'sepeda' },
-    { id: 3, question: 'vacuum cleaner', answer: 'penyedot debu' },
-    { id: 4, question: 'year', answer: 'tahun' },
-    { id: 5, question: 'today', answer: 'hari ini' },
-    { id: 6, question: 'tomorrow', answer: 'besok' },
-    { id: 7, question: 'yesterday', answer: 'kemarin' },
-    { id: 8, question: 'use', answer: 'menggunakan' },
-    { id: 9, question: 'difficult', answer: 'sulit' },
-    { id: 10, question: 'easy', answer: 'mudah' },
-]
+// let flashcardsIndonesian = [
+//     { id: 1, question: 'good afternoon', answer: 'selamat sore' },
+//     { id: 2, question: 'bicycle', answer: 'sepeda' },
+//     { id: 3, question: 'vacuum cleaner', answer: 'penyedot debu' },
+//     { id: 4, question: 'year', answer: 'tahun' },
+//     { id: 5, question: 'today', answer: 'hari ini' },
+//     { id: 6, question: 'tomorrow', answer: 'besok' },
+//     { id: 7, question: 'yesterday', answer: 'kemarin' },
+//     { id: 8, question: 'use', answer: 'menggunakan' },
+//     { id: 9, question: 'difficult', answer: 'sulit' },
+//     { id: 10, question: 'easy', answer: 'mudah' },
+// ]
 
-let flashcardsIndonesianNew = [
-    { id: 1, question: 'weather', answer: 'cuaca' },
-    { id: 2, question: 'cheers', answer: 'tepuk tangang' },
-    { id: 3, question: 'flower', answer: 'bunga' },
-    { id: 4, question: 'lightning', answer: 'petir' },
-    { id: 5, question: 'celebrate', answer: 'merayakan' },
-    { id: 6, question: 'prince', answer: 'pangeran' },
-    { id: 7, question: 'pigeon', answer: 'merpati' },
-    { id: 8, question: 'groceries', answer: 'bahan makanan' },
-    { id: 9, question: 'sunset', answer: 'matahari terbenam' },
-    { id: 10, question: 'ice cream', answer: 'es krim' },
-]
+// let flashcardsIndonesianNew = [
+//     { id: 1, question: 'weather', answer: 'cuaca' },
+//     { id: 2, question: 'cheers', answer: 'tepuk tangang' },
+//     { id: 3, question: 'flower', answer: 'bunga' },
+//     { id: 4, question: 'lightning', answer: 'petir' },
+//     { id: 5, question: 'celebrate', answer: 'merayakan' },
+//     { id: 6, question: 'prince', answer: 'pangeran' },
+//     { id: 7, question: 'pigeon', answer: 'merpati' },
+//     { id: 8, question: 'groceries', answer: 'bahan makanan' },
+//     { id: 9, question: 'sunset', answer: 'matahari terbenam' },
+//     { id: 10, question: 'ice cream', answer: 'es krim' },
+// ]
 
-let maths1
-let maths2
-let mathsOperator = ["+", "-", "*", "/"];
+// let maths1
+// let maths2
+// let mathsOperator = ["+", "-", "*", "/"];
 
-let flashcardsMathsB = [
-    { id: 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[0] + maths2) },
-    { id: 2, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[1] + maths2) },
-    { id: 3, question: ((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[2] + maths2) },
-    { id: 4, question: eval((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 8) + 2)) + mathsOperator[3] + maths2, answer: maths1 },
-]
+// let flashcardsMathsB = [
+//     { id: 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[0] + maths2) },
+//     { id: 2, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[1] + maths2) },
+//     { id: 3, question: ((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[2] + maths2) },
+//     { id: 4, question: eval((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 8) + 2)) + mathsOperator[3] + maths2, answer: maths1 },
+// ]
 
-let flashcardsMathsI = [
-    { id: 1, question: ((maths1 = Math.floor(Math.random() * 899) + 101) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[0] + maths2) },
-    { id: 2, question: ((maths1 = Math.floor(Math.random() * 899) + 101) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[1] + maths2) },
-    { id: 3, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[2] + maths2) },
-    { id: 4, question: eval((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 8) + 2)) + mathsOperator[3] + maths2, answer: maths1 },
-]
+// let flashcardsMathsI = [
+//     { id: 1, question: ((maths1 = Math.floor(Math.random() * 899) + 101) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[0] + maths2) },
+//     { id: 2, question: ((maths1 = Math.floor(Math.random() * 899) + 101) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[1] + maths2) },
+//     { id: 3, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[2] + maths2) },
+//     { id: 4, question: eval((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 8) + 2)) + mathsOperator[3] + maths2, answer: maths1 },
+// ]
 
-let flashcardsMathsE = [
-    { id: 1, question: ((maths1 = Math.floor(Math.random() * 8999) + 1001) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 8999) + 1001)), answer: eval(maths1 + mathsOperator[0] + maths2) },
-    { id: 2, question: ((maths1 = Math.floor(Math.random() * 8999) + 1001) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 8999) + 1001)), answer: eval(maths1 + mathsOperator[1] + maths2) },
-    { id: 3, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[2] + maths2) },
-    { id: 4, question: eval((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)) + mathsOperator[3] + maths2, answer: maths1 },
-]
+// let flashcardsMathsE = [
+//     { id: 1, question: ((maths1 = Math.floor(Math.random() * 8999) + 1001) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 8999) + 1001)), answer: eval(maths1 + mathsOperator[0] + maths2) },
+//     { id: 2, question: ((maths1 = Math.floor(Math.random() * 8999) + 1001) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 8999) + 1001)), answer: eval(maths1 + mathsOperator[1] + maths2) },
+//     { id: 3, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[2] + maths2) },
+//     { id: 4, question: eval((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)) + mathsOperator[3] + maths2, answer: maths1 },
+// ]
 
-let flashcardsCreate = []
+// let flashcardsCreate = []
 
-let randomCardNumberDutch = Math.floor(Math.random() * flashcardsDutch.length);
-let randomCardNumberGerman = Math.floor(Math.random() * flashcardsGerman.length);
-let randomCardNumberIndonesian = Math.floor(Math.random() * flashcardsIndonesian.length);
-let randomCardNumberMathsB = Math.floor(Math.random() * flashcardsMathsB.length);
-let randomCardNumberMathsI = Math.floor(Math.random() * flashcardsMathsI.length);
-let randomCardNumberMathsE = Math.floor(Math.random() * flashcardsMathsI.length);
-let randomCardNumberCreate = Math.floor(Math.random() * flashcardsCreate.length);
+// function randomCard(questionSet) {
+//     return questionSet[Math.floor(Math.random() * questionSet.length)]
+// }
 
-function randomiseNow(quizType, questionSet) {
+// let randomCardNumberDutch = flashcardsDutch[Math.floor(Math.random() * flashcardsDutch.length)]
+
+// let randomCardNumberDutch = Math.floor(Math.random() * flashcardsDutch.length);
+// let randomCardNumberGerman = Math.floor(Math.random() * flashcardsGerman.length);
+// let randomCardNumberIndonesian = Math.floor(Math.random() * flashcardsIndonesian.length);
+// let randomCardNumberMathsB = Math.floor(Math.random() * flashcardsMathsB.length);
+// let randomCardNumberMathsI = Math.floor(Math.random() * flashcardsMathsI.length);
+// let randomCardNumberMathsE = Math.floor(Math.random() * flashcardsMathsI.length);
+// let randomCardNumberCreate = Math.floor(Math.random() * flashcardsCreate.length);
+
+function randomiseNow(quizType, questionSet, randomCardNumber) {
     if (questionSet.length >= 1) {
-        let randomCard = questionSet[Math.floor(Math.random() * questionSet.length)]
-        document.getElementById(`randomQuestion${quizType}`).innerHTML = randomCard.question;
+        document.getElementById(`randomQuestion${quizType}`).innerHTML = randomCardNumber.question;
         document.getElementById(`clearText${quizType}`).innerHTML = `<input type=text id=input${quizType} class=form-med placeholder=answer /><button class=button med-btn onclick=submit${quizType}()>Submit answer</button>`;
         document.getElementById(`result${quizType}P`).innerHTML = `<p id=result${quizType}P><br></p>`;
         document.getElementById(`showAnswer${quizType}P`).innerHTML = `<p id=showAnswer${quizType}P><br></p>`;
@@ -124,7 +129,8 @@ function randomiseNow(quizType, questionSet) {
 }
 
 function randomWordDutch(){
-    randomiseNow('Dutch', flashcardsDutch)
+    randomCardNumberDutch = flashcardsDutch[Math.floor(Math.random() * flashcardsDutch.length)]
+    randomiseNow('Dutch', flashcardsDutch, randomCardNumberDutch)
 }
 
 // function randomWordGerman(){
@@ -151,19 +157,19 @@ function randomWordDutch(){
 //     randomiseNow('Create', flashcardsCreate)
 // }
 
-function getNew(questionSet, questionSetNew) {
-    if (questionSetNew.length >= 1) {
-        questionSet.push(questionSetNew[0])
-        questionSetNew.shift(questionSetNew)
-    } else {
-        alert("You have added all the bonus questions!")
-    }
-}
+// function getNew(questionSet, questionSetNew) {
+//     if (questionSetNew.length >= 1) {
+//         questionSet.push(questionSetNew[0])
+//         questionSetNew.shift(questionSetNew)
+//     } else {
+//         alert("You have added all the bonus questions!")
+//     }
+// }
 
-function getNewDutch() {
-    getNew(flashcardsDutch, flashcardsDutchNew)
-    updateTotalDutch();
-}
+// function getNewDutch() {
+//     getNew(flashcardsDutch, flashcardsDutchNew)
+//     updateTotalDutch();
+// }
 
 // function getNewGerman() {
 //     getNew(flashcardsGerman, flashcardsGermanNew)
@@ -235,18 +241,18 @@ function getNewDutch() {
 //     updateTotalMathsE();
 // }
 
-function submit(quizType, questionSet, randomCardNumber) {
-    if (document.getElementById(`randomQuestion${quizType}`).innerHTML == questionSet[randomCardNumber].question && document.getElementById(`input${quizType}`).value == questionSet[randomCardNumber].answer) {
+function submit(quizType, randomCardNumber) {
+    if (document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question && document.getElementById(`input${quizType}`).value == randomCardNumber.answer) {
         document.getElementById(`result${quizType}P`).innerHTML = "Correct!";
-    } else if (document.getElementById(`randomQuestion${quizType}`).innerHTML == questionSet[randomCardNumber].question && document.getElementById(`input${quizType}`).value !== questionSet[randomCardNumber].answer) {
+    } else if (document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question && document.getElementById(`input${quizType}`).value !== randomCardNumber.answer) {
         document.getElementById(`result${quizType}P`).innerHTML = "Incorrect.";
     } else {
-        alert("You need to generate a word first!")
+        return null;
     }
 }
 
 function submitDutch() {
-    submit('Dutch', flashcardsDutch, randomCardNumberDutch)
+    submit('Dutch', randomCardNumberDutch)
 }
 
 // function submitGerman() {
@@ -519,13 +525,13 @@ function submitDutch() {
 //     }
 // }
 
-function updateTotalDutch() {
-    let totalQuestionsDutchP = document.getElementById("totalQuestionsDutchP");
-    let totalQuestionsDutch = flashcardsDutch.length;
-    totalQuestionsDutchP.innerHTML = totalQuestionsDutch;
-    document.getElementById("removeQDutch").addEventListener("click", updateTotalDutch);
-    document.getElementById("submitQDutch").addEventListener("click", updateTotalDutch);
-}
+// function updateTotalDutch() {
+//     let totalQuestionsDutchP = document.getElementById("totalQuestionsDutchP");
+//     let totalQuestionsDutch = flashcardsDutch.length;
+//     totalQuestionsDutchP.innerHTML = totalQuestionsDutch;
+//     document.getElementById("removeQDutch").addEventListener("click", updateTotalDutch);
+//     document.getElementById("submitQDutch").addEventListener("click", updateTotalDutch);
+// }
 
 // function updateTotalGerman() {
 //     let totalQuestionsGermanP = document.getElementById("totalQuestionsGermanP");
@@ -575,7 +581,7 @@ function updateTotalDutch() {
 //     document.getElementById("submitQCreate").addEventListener("click", updateTotalCreate);
 // }
 
-updateTotalDutch();
+// updateTotalDutch();
 // updateTotalGerman();
 // updateTotalIndonesian();
 // updateTotalMathsB();

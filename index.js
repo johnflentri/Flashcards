@@ -50,62 +50,79 @@ let flashcardsGermanNew = [
     { id: 10, question: 'ice cream', answer: 'eiscreme' },
 ]
 
-// let flashcardsIndonesian = [
-//     { id: 1, question: 'good afternoon', answer: 'selamat sore' },
-//     { id: 2, question: 'bicycle', answer: 'sepeda' },
-//     { id: 3, question: 'vacuum cleaner', answer: 'penyedot debu' },
-//     { id: 4, question: 'year', answer: 'tahun' },
-//     { id: 5, question: 'today', answer: 'hari ini' },
-//     { id: 6, question: 'tomorrow', answer: 'besok' },
-//     { id: 7, question: 'yesterday', answer: 'kemarin' },
-//     { id: 8, question: 'use', answer: 'menggunakan' },
-//     { id: 9, question: 'difficult', answer: 'sulit' },
-//     { id: 10, question: 'easy', answer: 'mudah' },
-// ]
+let flashcardsIndonesian = [
+    { id: 1, question: 'good afternoon', answer: 'selamat sore' },
+    { id: 2, question: 'bicycle', answer: 'sepeda' },
+    { id: 3, question: 'vacuum cleaner', answer: 'penyedot debu' },
+    { id: 4, question: 'year', answer: 'tahun' },
+    { id: 5, question: 'today', answer: 'hari ini' },
+    { id: 6, question: 'tomorrow', answer: 'besok' },
+    { id: 7, question: 'yesterday', answer: 'kemarin' },
+    { id: 8, question: 'use', answer: 'menggunakan' },
+    { id: 9, question: 'difficult', answer: 'sulit' },
+    { id: 10, question: 'easy', answer: 'mudah' },
+]
 
-// let flashcardsIndonesianNew = [
-//     { id: 1, question: 'weather', answer: 'cuaca' },
-//     { id: 2, question: 'cheers', answer: 'tepuk tangang' },
-//     { id: 3, question: 'flower', answer: 'bunga' },
-//     { id: 4, question: 'lightning', answer: 'petir' },
-//     { id: 5, question: 'celebrate', answer: 'merayakan' },
-//     { id: 6, question: 'prince', answer: 'pangeran' },
-//     { id: 7, question: 'pigeon', answer: 'merpati' },
-//     { id: 8, question: 'groceries', answer: 'bahan makanan' },
-//     { id: 9, question: 'sunset', answer: 'matahari terbenam' },
-//     { id: 10, question: 'ice cream', answer: 'es krim' },
-// ]
+let flashcardsIndonesianNew = [
+    { id: 1, question: 'weather', answer: 'cuaca' },
+    { id: 2, question: 'cheers', answer: 'tepuk tangang' },
+    { id: 3, question: 'flower', answer: 'bunga' },
+    { id: 4, question: 'lightning', answer: 'petir' },
+    { id: 5, question: 'celebrate', answer: 'merayakan' },
+    { id: 6, question: 'prince', answer: 'pangeran' },
+    { id: 7, question: 'pigeon', answer: 'merpati' },
+    { id: 8, question: 'groceries', answer: 'bahan makanan' },
+    { id: 9, question: 'sunset', answer: 'matahari terbenam' },
+    { id: 10, question: 'ice cream', answer: 'es krim' },
+]
 
-let maths1
-let maths2
+let maths1A = (Math.floor(Math.random() * 8) + 2)
+let maths1B = (Math.floor(Math.random() * 8) + 2)
+let maths2A = (Math.floor(Math.random() * 89) + 11)
+let maths2B = (Math.floor(Math.random() * 89) + 11)
+let maths2C = (Math.floor(Math.random() * 89) + 11)
+let maths2D = (Math.floor(Math.random() * 89) + 11)
+let maths3A = (Math.floor(Math.random() * 899) + 101)
+let maths3B = (Math.floor(Math.random() * 899) + 101)
+let maths3C = (Math.floor(Math.random() * 899) + 101)
+let maths3D = (Math.floor(Math.random() * 899) + 101)
+let maths4A = (Math.floor(Math.random() * 8999) + 1001)
+let maths4B = (Math.floor(Math.random() * 8999) + 1001)
+let maths4C = (Math.floor(Math.random() * 8999) + 1001)
+let maths4D = (Math.floor(Math.random() * 8999) + 1001)
 let mathsOperator = ["+", "-", "*", "/"];
 
 let flashcardsMathsB = [
-    { id: 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[0] + maths2) },
-    { id: 2, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[1] + maths2) },
-    { id: 3, question: ((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[2] + maths2) },
-    { id: 4, question: eval((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 8) + 2)) + mathsOperator[3] + maths2, answer: maths1 },
+    { id: 1, question: (maths2A + mathsOperator[0] + maths2B), answer: eval(maths2A + mathsOperator[0] + maths2B) },
+    { id: 2, question: (maths2C + mathsOperator[1] + maths2D), answer: eval(maths2C + mathsOperator[1] + maths2D) },
+    { id: 3, question: (maths1A + mathsOperator[2] + maths2A), answer: eval(maths1A + mathsOperator[2] + maths2A) },
+    { id: 4, question: eval(maths1A + mathsOperator[2] + maths1B) + mathsOperator[3] + maths1B, answer: maths1A },
 ]
 
-// let flashcardsMathsI = [
-//     { id: 1, question: ((maths1 = Math.floor(Math.random() * 899) + 101) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[0] + maths2) },
-//     { id: 2, question: ((maths1 = Math.floor(Math.random() * 899) + 101) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[1] + maths2) },
-//     { id: 3, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[2] + maths2) },
-//     { id: 4, question: eval((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 8) + 2)) + mathsOperator[3] + maths2, answer: maths1 },
-// ]
+let flashcardsMathsI = [
+    { id: 1, question: (maths3A + mathsOperator[0] + maths3B), answer: eval(maths3A + mathsOperator[0] + maths3B) },
+    { id: 2, question: (maths3C + mathsOperator[1] + maths3D), answer: eval(maths3C + mathsOperator[1] + maths3D) },
+    { id: 3, question: (maths2A + mathsOperator[2] + maths2B), answer: eval(maths2A + mathsOperator[2] + maths2B) },
+    { id: 4, question: eval(maths2A + mathsOperator[2] + maths1A) + mathsOperator[3] + maths1A, answer: maths2A },
+]
 
-// let flashcardsMathsE = [
-//     { id: 1, question: ((maths1 = Math.floor(Math.random() * 8999) + 1001) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 8999) + 1001)), answer: eval(maths1 + mathsOperator[0] + maths2) },
-//     { id: 2, question: ((maths1 = Math.floor(Math.random() * 8999) + 1001) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 8999) + 1001)), answer: eval(maths1 + mathsOperator[1] + maths2) },
-//     { id: 3, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[2] + maths2) },
-//     { id: 4, question: eval((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)) + mathsOperator[3] + maths2, answer: maths1 },
-// ]
+let flashcardsMathsE = [
+    { id: 1, question: (maths4A + mathsOperator[0] + maths4B), answer: eval(maths4A + mathsOperator[0] + maths4B) },
+    { id: 2, question: (maths4C + mathsOperator[1] + maths4D), answer: eval(maths4C + mathsOperator[1] + maths4D) },
+    { id: 3, question: (maths2A + mathsOperator[2] + maths3A), answer: eval(maths2A + mathsOperator[2] + maths3A) },
+    { id: 4, question: eval(maths2A + mathsOperator[2] + maths2B) + mathsOperator[3] + maths2B, answer: maths2A },
+]
 
-// let flashcardsCreate = []
+let flashcardsCreate = []
 
 let randomCardNumberDutch = flashcardsDutch[Math.floor(Math.random() * flashcardsDutch.length)]
 let randomCardNumberGerman = flashcardsGerman[Math.floor(Math.random() * flashcardsGerman.length)]
+let randomCardNumberIndonesian = flashcardsIndonesian[Math.floor(Math.random() * flashcardsIndonesian.length)]
 let randomCardNumberMathsB = flashcardsMathsB[Math.floor(Math.random() * flashcardsMathsB.length)]
+let randomCardNumberMathsI = flashcardsMathsI[Math.floor(Math.random() * flashcardsMathsI.length)]
+let randomCardNumberMathsE = flashcardsMathsE[Math.floor(Math.random() * flashcardsMathsE.length)]
+let randomCardNumberCreate = flashcardsCreate[Math.floor(Math.random() * flashcardsCreate.length)]
+
 
 function randomiseNow(quizType, questionSet, randomCardNumber) {
     if (questionSet.length >= 1) {
@@ -128,26 +145,30 @@ function randomWordGerman() {
     randomiseNow('German', flashcardsGerman, randomCardNumberGerman)
 }
 
-// function randomWordIndonesian(){
-//     randomiseNow('Indonesian', flashcardsIndonesian)
-// }
+function randomWordIndonesian() {
+    randomCardNumberIndonesian = flashcardsIndonesian[Math.floor(Math.random() * flashcardsIndonesian.length)]
+    randomiseNow('Indonesian', flashcardsIndonesian, randomCardNumberIndonesian)
+}
 
 function randomEqMathsB() {
     randomCardNumberMathsB = flashcardsMathsB[Math.floor(Math.random() * flashcardsMathsB.length)]
     randomiseNow('MathsB', flashcardsMathsB, randomCardNumberMathsB)
 }
 
-// function randomEqMathsI(){
-//     randomiseNow('MathsI', flashcardsMathsI)
-// }
+function randomEqMathsI() {
+    randomCardNumberMathsI = flashcardsMathsI[Math.floor(Math.random() * flashcardsMathsI.length)]
+    randomiseNow('MathsI', flashcardsMathsI, randomCardNumberMathsI)
+}
 
-// function randomEqMathsE(){
-//     randomiseNow('MathsE', flashcardsMathsE)
-// }
+function randomEqMathsE() {
+    randomCardNumberMathsE = flashcardsMathsE[Math.floor(Math.random() * flashcardsMathsE.length)]
+    randomiseNow('MathsE', flashcardsMathsE, randomCardNumberMathsE)
+}
 
-// function randomiseCreate(){
-//     randomiseNow('Create', flashcardsCreate)
-// }
+function randomiseCreate(){
+    randomCardNumberCreate = flashcardsCreate[Math.floor(Math.random() * flashcardsCreate.length)]
+    randomiseNow('Create', flashcardsCreate, randomCardNumberCreate)
+}
 
 function getNewLanguage(questionSet, questionSetNew) {
     if (questionSetNew.length >= 1) {
@@ -168,414 +189,296 @@ function getNewGerman() {
     updateTotalGerman();
 }
 
-// function getNewIndonesian() {
-//     getNew(flashcardsIndonesian, flashcardsIndonesianNew)
-//     updateTotalIndonesian();
-// }
+function getNewIndonesian() {
+    getNewLanguage(flashcardsIndonesian, flashcardsIndonesianNew)
+    updateTotalIndonesian();
+}
 
-function getNewMaths(questionSet, questionSetNew) {
-    questionSet.push(questionSetNew)
+function mathsGenerator(questionSet, maths1, maths2, mathsOperator) {
+    mathsOperator = ["+", "-", "*", "/"];
+    maths1A = (Math.floor(Math.random() * 8) + 2)
+    maths1B = (Math.floor(Math.random() * 8) + 2)
+    maths2A = (Math.floor(Math.random() * 89) + 11)
+    maths2B = (Math.floor(Math.random() * 89) + 11)
+    maths2C = (Math.floor(Math.random() * 89) + 11)
+    maths2D = (Math.floor(Math.random() * 89) + 11)
+    maths3A = (Math.floor(Math.random() * 899) + 101)
+    maths3B = (Math.floor(Math.random() * 899) + 101)
+    maths3C = (Math.floor(Math.random() * 899) + 101)
+    maths3D = (Math.floor(Math.random() * 899) + 101)
+    maths4A = (Math.floor(Math.random() * 8999) + 1001)
+    maths4B = (Math.floor(Math.random() * 8999) + 1001)
+    maths4C = (Math.floor(Math.random() * 8999) + 1001)
+    maths4D = (Math.floor(Math.random() * 8999) + 1001)
+    questionSet.push({ id: questionSet.length + 1, question: (maths1 + mathsOperator[0] + maths2), answer: eval(maths1 + mathsOperator[0] + maths2) });
 }
 
 function getNewMathsBAdd() {
-    flashcardsMathsBAdd = { id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[0] + maths2) };
-    getNewMaths(flashcardsMathsB, flashcardsMathsBAdd)
+    mathsGenerator(flashcardsMathsB, maths2A, maths2B, mathsOperator[0])
     updateTotalMathsB();
 }
 
-// function getNewMathsBAdd() {
-//     flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[0] + maths2) });
-//     updateTotalMathsB();
-// }
-
-// function getNewMathsBSubtract() {
-//     flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[1] + maths2) });
-//     updateTotalMathsB();
-// }
-
-// function getNewMathsBMultiply() {
-//     flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[2] + maths2) });
-//     updateTotalMathsB();
-// }
-
-// function getNewMathsBDivide() {
-//     flashcardsMathsB.push({ id: flashcardsMathsB.length + 1, question: eval((maths1 = Math.floor(Math.random() * 8) + 2) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 8) + 2)) + mathsOperator[3] + maths2, answer: maths1 });
-//     updateTotalMathsB();
-// }
-
-// function getNewMathsIAdd() {
-//     flashcardsMathsI.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 899) + 101) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[0] + maths2) });
-//     updateTotalMathsI();
-// }
-
-// function getNewMathsISubtract() {
-//     flashcardsMathsI.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 899) + 101) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[1] + maths2) });
-//     updateTotalMathsI();
-// }
-
-// function getNewMathsIMultiply() {
-//     flashcardsMathsI.push({ id: flashcardsMathsB.length + 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)), answer: eval(maths1 + mathsOperator[2] + maths2) });
-//     updateTotalMathsI();
-// }
-
-// function getNewMathsIDivide() {
-//     flashcardsMathsI.push({ id: flashcardsMathsB.length + 1, question: eval((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 8) + 2)) + mathsOperator[3] + maths2, answer: maths1 });
-//     updateTotalMathsI();
-// }
-
-// function getNewMathsEAdd() {
-//     flashcardsMathsE.push({ id: flashcardsMathsE.length + 1, question: ((maths1 = Math.floor(Math.random() * 8999) + 1001) + mathsOperator[0] + (maths2 = Math.floor(Math.random() * 8999) + 1001)), answer: eval(maths1 + mathsOperator[0] + maths2) });
-//     updateTotalMathsE();
-// }
-
-// function getNewMathsESubtract() {
-//     flashcardsMathsE.push({ id: flashcardsMathsE.length + 1, question: ((maths1 = Math.floor(Math.random() * 8999) + 1001) + mathsOperator[1] + (maths2 = Math.floor(Math.random() * 8999) + 1001)), answer: eval(maths1 + mathsOperator[1] + maths2) });
-//     updateTotalMathsE();
-// }
-
-// function getNewMathsEMultiply() {
-//     flashcardsMathsE.push({ id: flashcardsMathsE.length + 1, question: ((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 899) + 101)), answer: eval(maths1 + mathsOperator[2] + maths2) });
-//     updateTotalMathsE();
-// }
-
-// function getNewMathsEDivide() {
-//     flashcardsMathsE.push({ id: flashcardsMathsE.length + 1, question: eval((maths1 = Math.floor(Math.random() * 89) + 11) + mathsOperator[2] + (maths2 = Math.floor(Math.random() * 89) + 11)) + mathsOperator[3] + maths2, answer: maths1 });
-//     updateTotalMathsE();
-// }
-
-    function submit(quizType, questionSet, randomCardNumber) {
-        if ((questionSet.length >= 1) && document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question && document.getElementById(`input${quizType}`).value == randomCardNumber.answer) {
-            document.getElementById(`result${quizType}P`).innerHTML = "Correct!";
-        } else if ((questionSet.length >= 1) && document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question && document.getElementById(`input${quizType}`).value !== randomCardNumber.answer) {
-            document.getElementById(`result${quizType}P`).innerHTML = "Incorrect.";
-        } else {
-            alert("You need to generate a word first!")
-        }
-    }
-
-    function submitDutch() {
-        submit('Dutch', flashcardsDutch, randomCardNumberDutch)
-    }
-
-    function submitGerman() {
-        submit('German', flashcardsGerman, randomCardNumberGerman)
-    }
-
-    // function submitIndonesian() {
-    //     if (document.getElementById("randomQuestionIndonesian").innerHTML == flashcardsIndonesian[randomCardNumberIndonesian].question && inputIndonesian.value == flashcardsIndonesian[randomCardNumberIndonesian].answer) {
-    //         document.getElementById("resultIndonesianP").innerHTML = "Correct!";
-    //     } else if (document.getElementById("randomQuestionIndonesian").innerHTML == flashcardsIndonesian[randomCardNumberIndonesian].question && inputIndonesian.value !== flashcardsIndonesian[randomCardNumberIndonesian].answer) {
-    //         document.getElementById("resultIndonesianP").innerHTML = "Incorrect.";
-    //     } else {
-    //         alert("You need to generate a word first!")
-    //     }
-    // }
-
-    function submitMathsB() {
-        submit('MathsB', randomCardNumberMathsB)
-    }
-
-    // function submitMathsI() {
-    //     if (document.getElementById("randomQuestionMathsI").innerHTML == flashcardsMathsI[randomCardNumberMathsI].question && inputMathsI.value == flashcardsMathsI[randomCardNumberMathsI].answer) {
-    //         document.getElementById("resultMathsIP").innerHTML = "Correct!";
-    //     } else if (document.getElementById("randomQuestionMathsI").innerHTML == flashcardsMathsI[randomCardNumberMathsI].question && inputMathsI.value !== flashcardsMathsI[randomCardNumberMathsI].answer) {
-    //         document.getElementById("resultMathsIP").innerHTML = "Incorrect.";
-    //     } else {
-    //         alert("You need to generate an equation first!")
-    //     }
-    // }
-
-    // function submitMathsE() {
-    //     if (document.getElementById("randomQuestionMathsE").innerHTML == flashcardsMathsE[randomCardNumberMathsE].question && inputMathsE.value == flashcardsMathsE[randomCardNumberMathsE].answer) {
-    //         document.getElementById("resultMathsEP").innerHTML = "Correct!";
-    //     } else if (document.getElementById("randomQuestionMathsE").innerHTML == flashcardsMathsE[randomCardNumberMathsE].question && inputMathsE.value !== flashcardsMathsE[randomCardNumberMathsE].answer) {
-    //         document.getElementById("resultMathsEP").innerHTML = "Incorrect.";
-    //     } else {
-    //         alert("You need to generate an equation first!")
-    //     }
-    // }
-
-    // function submitCreate() {
-    //     if (document.getElementById("randomQuestionCreate").innerHTML == flashcardsCreate[randomCardNumberCreate].question && inputCreate.value == flashcardsCreate[randomCardNumberCreate].answer) {
-    //         document.getElementById("resultCreateP").innerHTML = "Correct!";
-    //     } else if (document.getElementById("randomQuestionCreate").innerHTML == flashcardsCreate[randomCardNumberCreate].question && inputCreate.value !== flashcardsCreate[randomCardNumberCreate].answer) {
-    //         document.getElementById("resultCreateP").innerHTML = "Incorrect.";
-    //     } else {
-    //         alert("You need to generate a question first!")
-    //     }
-    // }
-
-    function showAnswer(quizType, questionSet, randomCardNumber) {
-        if ((questionSet.length >= 1) && document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question) {
-            document.getElementById(`showAnswer${quizType}P`).innerHTML = randomCardNumber.answer;
-        } else {
-            alert("You need to generate a word first!");
-        }
-    }
-
-    function showAnswerDutch() {
-        showAnswer('Dutch', flashcardsDutch, randomCardNumberDutch)
-    }
-
-    function showAnswerGerman() {
-        showAnswer('German', flashcardsGerman, randomCardNumberGerman)
-    }
-
-    // function showAnswerIndonesian() {
-    //     if (document.getElementById("randomQuestionIndonesian").innerHTML == flashcardsIndonesian[randomCardNumberIndonesian].question) {
-    //         document.getElementById("showAnswerIndonesianP").innerHTML = flashcardsIndonesian[randomCardNumberIndonesian].answer;
-    //     } else {
-    //         alert("You need to generate a word first!");
-    //     }
-    // }
-
-    function showAnswerMathsB() {
-        showAnswer('MathsB', randomCardNumberMathsB)
-    }
-
-    // function showAnswerMathsB() {
-    //     if (document.getElementById("randomQuestionMathsB").innerHTML == flashcardsMathsB[randomCardNumberMathsB].question) {
-    //         document.getElementById("showAnswerMathsBP").innerHTML = flashcardsMathsB[randomCardNumberMathsB].answer;
-    //     } else {
-    //         alert("You need to generate an equation first!");
-    //     }
-    // }
-
-    // function showAnswerMathsI() {
-    //     if (document.getElementById("randomQuestionMathsI").innerHTML == flashcardsMathsI[randomCardNumberMathsI].question) {
-    //         document.getElementById("showAnswerMathsIP").innerHTML = flashcardsMathsI[randomCardNumberMathsI].answer;
-    //     } else {
-    //         alert("You need to generate an equation first!");
-    //     }
-    // }
-
-    // function showAnswerMathsE() {
-    //     if (document.getElementById("randomQuestionMathsE").innerHTML == flashcardsMathsE[randomCardNumberMathsE].question) {
-    //         document.getElementById("showAnswerMathsEP").innerHTML = flashcardsMathsE[randomCardNumberMathsE].answer;
-    //     } else {
-    //         alert("You need to generate an equation first!");
-    //     }
-    // }
-
-    // function showAnswerCreate() {
-    //     if (document.getElementById("randomQuestionCreate").innerHTML == flashcardsCreate[randomCardNumberCreate].question) {
-    //         document.getElementById("showAnswerCreateP").innerHTML = flashcardsCreate[randomCardNumberCreate].answer;
-    //     } else {
-    //         alert("You need to generate a question first!");
-    //     }
-    // }
-
-    function removeQ(quizType, questionSet, randomCardNumber) {
-        n = questionSet.indexOf(randomCardNumber)
-        if (questionSet.length >= 1 && document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question) {
-            questionSet.splice(n, 1);
-            document.getElementById(`randomQuestion${quizType}`).innerHTML = `<p id=randomQuestion${quizType}><br></p>`;
-            document.getElementById(`clearText${quizType}`).innerHTML = `<input type=text id=input${quizType} class=form-med placeholder=answer /><button class=button med-btn onclick=submit${quizType}()>Submit answer</button>`;
-            document.getElementById(`result${quizType}P`).innerHTML = `<p id=result${quizType}P><br></p>`;
-            document.getElementById(`showAnswer${quizType}P`).innerHTML = `<p id=showAnswer${quizType}P><br></p>`;
-        } else {
-            alert("You need to generate a word first!");
-        }
-    }
-
-    function removeQDutch() {
-        removeQ('Dutch', flashcardsDutch, randomCardNumberDutch)
-        updateTotalDutch();
-    }
-
-    function removeQGerman() {
-        removeQ('German', flashcardsGerman, randomCardNumberGerman)
-        updateTotalGerman();
-    }
-
-    // function removeQIndonesian() {
-    //     if (document.getElementById("randomQuestionIndonesian").innerHTML == flashcardsIndonesian[randomCardNumberIndonesian].question) {
-    //         flashcardsIndonesian.splice(randomCardNumberIndonesian, 1);
-    //         document.getElementById("randomQuestionIndonesian").innerHTML = "<p id=randomQuestionIndonesian><br></p>";
-    //         document.getElementById("clearTextIndonesian").innerHTML = "<input type=text id=inputIndonesian class=form-med placeholder=answer /><button class=button med-btn onclick=submitIndonesian()>Submit answer</button>";
-    //         document.getElementById("resultIndonesianP").innerHTML = "<p id=resultIndonesianP><br></p>";
-    //         document.getElementById("showAnswerIndonesianP").innerHTML = "<p id=showAnswerIndonesianP><br></p>";
-    //     } else {
-    //         alert("You need to generate a word first!");
-    //     }
-    // }
-
-    function removeQMathsB() {
-        removeQ('MathsB', flashcardsMathsB, randomCardNumberMathsB)
-        updateTotalMathsB();
-    }
-
-    // function removeQMathsI() {
-    //     if (document.getElementById("randomQuestionMathsI").innerHTML == flashcardsMathsI[randomCardNumberMathsI].question) {
-    //         flashcardsMathsI.splice(randomCardNumberMathsI, 1);
-    //         document.getElementById("randomQuestionMathsI").innerHTML = "<p id=randomQuestionMathsI><br></p>";
-    //         document.getElementById("clearTextMathsI").innerHTML = "<input type=text id=inputMathsI class=form-med placeholder=answer /><button class=button med-btn onclick=submitMathsI()>Submit answer</button>";
-    //         document.getElementById("resultMathsIP").innerHTML = "<p id=resultMathsIP><br></p>";
-    //         document.getElementById("showAnswerMathsIP").innerHTML = "<p id=showAnswerMathsIP><br></p>";
-    //     } else {
-    //         alert("You need to generate an equation first!");
-    //     }
-    // }
-
-    // function removeQMathsE() {
-    //     if (document.getElementById("randomQuestionMathsE").innerHTML == flashcardsMathsE[randomCardNumberMathsE].question) {
-    //         flashcardsMathsE.splice(randomCardNumberMathsE, 1);
-    //         document.getElementById("randomQuestionMathsE").innerHTML = "<p id=randomQuestionMathsE><br></p>";
-    //         document.getElementById("clearTextMathsE").innerHTML = "<input type=text id=inputMathsE class=form-med placeholder=answer /><button class=button med-btn onclick=submitMathsE()>Submit answer</button>";
-    //         document.getElementById("resultMathsEP").innerHTML = "<p id=resultMathsEP><br></p>";
-    //         document.getElementById("showAnswerMathsEP").innerHTML = "<p id=showAnswerMathsEP><br></p>";
-    //     } else {
-    //         alert("You need to generate an equation first!");
-    //     }
-    // }
-
-    // function removeQCreate() {
-    //     if (document.getElementById("randomQuestionCreate").innerHTML == flashcardsCreate[randomCardNumberCreate].question) {
-    //         flashcardsCreate.splice(randomCardNumberCreate, 1);
-    //         document.getElementById("randomQuestionCreate").innerHTML = "<p id=randomQuestionCreate><br></p>";
-    //         document.getElementById("clearTextCreate").innerHTML = "<input type=text id=inputCreate class=form-med placeholder=answer /><button class=button med-btn onclick=submitCreate()>Submit answer</button>";
-    //         document.getElementById("resultCreateP").innerHTML = "<p id=resultCreateP><br></p>";
-    //         document.getElementById("showAnswerCreateP").innerHTML = "<p id=showAnswerCreateP><br></p>";
-    //     } else {
-    //         alert("You need to generate a question first!");
-    //     }
-    // }
-
-    function submitQ(quizType, questionSet) {
-        if (document.getElementById(`newQ${quizType}`).value !== "" && document.getElementById(`newA${quizType}`).value !== "") {
-            questionSet.push({ id: questionSet.length + 1, question: document.getElementById(`newQ${quizType}`).value, answer: document.getElementById(`newA${quizType}`).value });
-            document.getElementById(`clear${quizType}Submit`).innerHTML = `<input type=text id=newQ${quizType} class=form-med placeholder=question /><input type=text id=newA${quizType} class=form-med placeholder=answer /><button id=submitQ${quizType} class=button med-btn onclick=submitQ${quizType}()>Add question</button>`;
-        } else {
-            alert("Make sure you have added a question and an answer to the corresponding boxes.");
-        }
-    }
-
-    function submitQDutch() {
-        submitQ('Dutch', flashcardsDutch)
-        updateTotalDutch();
-    }
-
-    function submitQGerman() {
-        submitQ('German', flashcardsGerman)
-    }
-
-    // function submitQIndonesian() {
-    //     if (newQIndonesian.value !== "" && newAIndonesian.value !== "") {
-    //         flashcardsIndonesian.push({ id: flashcardsIndonesian.length + 1, question: newQIndonesian.value, answer: newAIndonesian.value });
-    //         document.getElementById("clearIndonesianSubmit").innerHTML = "<input type=text id=newQIndonesian class=form-med placeholder=question /><input type=text id=newAIndonesian class=form-med placeholder=answer /><button id=submitQIndonesian class=button med-btn onclick=submitQIndonesian()>Add question</button>";
-    //         updateTotalIndonesian();
-    //     } else {
-    //         alert("Make sure you have added a question and an answer to the corresponding boxes.");
-    //     }
-    // }
-
-    function submitQMathsB() {
-        submitQ('MathsB', flashcardsMathsB)
-    }
-
-    // function submitQMathsI() {
-    //     if (newQMathsI.value !== "" && newAMathsI.value !== "") {
-    //         flashcardsMathsI.push({ id: flashcardsMathsI.length + 1, question: newQMathsI.value, answer: newAMathsI.value });
-    //         document.getElementById("clearMathsISubmit").innerHTML = "<input type=text id=newQMathsI class=form-med placeholder=question /><input type=text id=newAMathsI class=form-med placeholder=answer /><button id=submitQMathsI class=button med-btn onclick=submitQMathsI()>Add question</button>";
-    //         updateTotalMathsI();
-    //     } else {
-    //         alert("Make sure you have added a question and an answer to the corresponding boxes.");
-    //     }
-    // }
-
-    // function submitQMathsE() {
-    //     if (newQMathsE.value !== "" && newAMathsE.value !== "") {
-    //         flashcardsMathsE.push({ id: flashcardsMathsE.length + 1, question: newQMathsE.value, answer: newAMathsE.value });
-    //         document.getElementById("clearMathsESubmit").innerHTML = "<input type=text id=newQMathsE class=form-med placeholder=question /><input type=text id=newAMathsE class=form-med placeholder=answer /><button id=submitQMathsE class=button med-btn onclick=submitQMathsE()>Add question</button>";
-    //         updateTotalMathsE();
-    //     } else {
-    //         alert("Make sure you have added a question and an answer to the corresponding boxes.");
-    //     }
-    // }
-
-    // function submitQCreate() {
-    //     if (newQCreate.value !== "" && newACreate.value !== "") {
-    //         flashcardsCreate.push({ id: flashcardsCreate.length + 1, question: newQCreate.value, answer: newACreate.value });
-    //         document.getElementById("clearCreateSubmit").innerHTML = "<input type=text id=newQCreate class=form-med placeholder=question /><input type=text id=newACreate class=form-med placeholder=answer /><button id=submitQCreate class=button med-btn onclick=submitQCreate()>Add question</button>";
-    //         updateTotalCreate();
-    //     } else {
-    //         alert("Make sure you have added a question and an answer to the corresponding boxes.");
-    //     }
-    // }
-
-    function updateTotal(quizType, questionSet, updateTotal) {
-        let totalQuestionsP = document.getElementById(`totalQuestions${quizType}P`);
-        let totalQuestions = questionSet.length;
-        totalQuestionsP.innerHTML = totalQuestions;
-        document.getElementById(`removeQ${quizType}`).addEventListener("click", updateTotal);
-        document.getElementById(`submitQ${quizType}`).addEventListener("click", updateTotal);
-    }
-
-    function updateTotalDutch() {
-        updateTotal('Dutch', flashcardsDutch, updateTotalDutch)
-    }
-
-    updateTotalDutch();
-
-
-
-    function updateTotalGerman() {
-        updateTotal('German', flashcardsGerman, updateTotalGerman)
-    }
-
-    updateTotalGerman();
-
-
-    // function updateTotalIndonesian() {
-    //     let totalQuestionsIndonesianP = document.getElementById("totalQuestionsIndonesianP");
-    //     let totalQuestionsIndonesian = flashcardsIndonesian.length;
-    //     totalQuestionsIndonesianP.innerHTML = totalQuestionsIndonesian;
-    //     document.getElementById("removeQIndonesian").addEventListener("click", updateTotalIndonesian);
-    //     document.getElementById("submitQIndonesian").addEventListener("click", updateTotalIndonesian);
-    // }
-
-    function updateTotalMathsB() {
-        updateTotal('MathsB', flashcardsMathsB, updateTotalMathsB)
-    }
-
+function getNewMathsBSubtract() {
+    mathsGenerator(flashcardsMathsB, maths2A, maths2B, mathsOperator[1])
     updateTotalMathsB();
+}
 
-// function updateTotalMathsB() {
-//     let totalQuestionsMathsBP = document.getElementById("totalQuestionsMathsBP");
-//     let totalQuestionsMathsB = flashcardsMathsB.length;
-//     totalQuestionsMathsBP.innerHTML = totalQuestionsMathsB;
-//     document.getElementById("removeQMathsB").addEventListener("click", updateTotalMathsB);
-//     document.getElementById("submitQMathsB").addEventListener("click", updateTotalMathsB);
-// }
+function getNewMathsBMultiply() {
+    mathsGenerator(flashcardsMathsB, maths1A, maths2A, mathsOperator[2])
+    updateTotalMathsB();
+}
 
-// function updateTotalMathsI() {
-//     let totalQuestionsMathsIP = document.getElementById("totalQuestionsMathsIP");
-//     let totalQuestionsMathsI = flashcardsMathsI.length;
-//     totalQuestionsMathsIP.innerHTML = totalQuestionsMathsI;
-//     document.getElementById("removeQMathsI").addEventListener("click", updateTotalMathsI);
-//     document.getElementById("submitQMathsI").addEventListener("click", updateTotalMathsI);
-// }
+function getNewMathsBDivide() {
+    flashcardsMathsB.push({ id: 4, question: eval(maths1A + mathsOperator[2] + maths1B) + mathsOperator[3] + maths1B, answer: maths1A });
+    updateTotalMathsB();
+}
 
-// function updateTotalMathsE() {
-//     let totalQuestionsMathsEP = document.getElementById("totalQuestionsMathsEP");
-//     let totalQuestionsMathsE = flashcardsMathsE.length;
-//     totalQuestionsMathsEP.innerHTML = totalQuestionsMathsE;
-//     document.getElementById("removeQMathsE").addEventListener("click", updateTotalMathsE);
-//     document.getElementById("submitQMathsE").addEventListener("click", updateTotalMathsE);
-// }
+function getNewMathsIAdd() {
+    mathsGenerator(flashcardsMathsI, maths3A, maths3B, mathsOperator[0])
+    updateTotalMathsB();
+}
 
-// function updateTotalCreate() {
-//     let totalQuestionsCreateP = document.getElementById("totalQuestionsCreateP");
-//     let totalQuestionsCreate = flashcardsCreate.length;
-//     totalQuestionsCreateP.innerHTML = totalQuestionsCreate;
-//     document.getElementById("removeQCreate").addEventListener("click", updateTotalCreate);
-//     document.getElementById("submitQCreate").addEventListener("click", updateTotalCreate);
-// }
+function getNewMathsISubtract() {
+    mathsGenerator(flashcardsMathsI, maths3A, maths3B, mathsOperator[1])
+    updateTotalMathsI();
+}
 
-// updateTotalDutch();
-// updateTotalGerman();
-// updateTotalIndonesian();
-// updateTotalMathsB();
-// updateTotalMathsI();
-// updateTotalMathsE();
-// updateTotalCreate();
+function getNewMathsIMultiply() {
+    mathsGenerator(flashcardsMathsI, maths2C, maths2D, mathsOperator[2])
+    updateTotalMathsI();
+}
+
+function getNewMathsIDivide() {
+    flashcardsMathsI.push({ id: 4, question: eval(maths2A + mathsOperator[2] + maths1A) + mathsOperator[3] + maths1A, answer: maths2A });
+    updateTotalMathsI();
+}
+
+function getNewMathsEAdd() {
+    mathsGenerator(flashcardsMathsE, maths4A, maths4B, mathsOperator[0])
+    updateTotalMathsE();
+}
+
+function getNewMathsESubtract() {
+    mathsGenerator(flashcardsMathsE, maths4C, maths4D, mathsOperator[1])
+    updateTotalMathsE();
+}
+
+function getNewMathsEMultiply() {
+    mathsGenerator(flashcardsMathsE, maths2A, maths3A, mathsOperator[2])
+    updateTotalMathsE();
+}
+
+function getNewMathsEDivide() {
+    flashcardsMathsE.push({ id: 4, question: eval(maths2A + mathsOperator[2] + maths2B) + mathsOperator[3] + maths2B, answer: maths2A });
+    updateTotalMathsE();
+}
+
+function submit(quizType, questionSet, randomCardNumber) {
+    if ((questionSet.length >= 1) && document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question && document.getElementById(`input${quizType}`).value == randomCardNumber.answer) {
+        document.getElementById(`result${quizType}P`).innerHTML = "Correct!";
+    } else if ((questionSet.length >= 1) && document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question && document.getElementById(`input${quizType}`).value !== randomCardNumber.answer) {
+        document.getElementById(`result${quizType}P`).innerHTML = "Incorrect.";
+    } else {
+        alert("You need to generate a question first!")
+    }
+}
+
+function submitDutch() {
+    submit('Dutch', flashcardsDutch, randomCardNumberDutch)
+}
+
+function submitGerman() {
+    submit('German', flashcardsGerman, randomCardNumberGerman)
+}
+
+function submitIndonesian() {
+    submit('Indonesian', flashcardsIndonesian, randomCardNumberIndonesian)
+}
+
+function submitMathsB() {
+    submit('MathsB', flashcardsMathsB, randomCardNumberMathsB)
+}
+
+function submitMathsI() {
+    submit('MathsI', flashcardsMathsI, randomCardNumberMathsI)
+}
+
+function submitMathsE() {
+    submit('MathsE', flashcardsMathsE, randomCardNumberMathsE)
+}
+
+function submitCreate() {
+    submit('Create', flashcardsCreate, randomCardNumberCreate)
+}
+
+function showAnswer(quizType, questionSet, randomCardNumber) {
+    if ((questionSet.length >= 1) && document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question) {
+        document.getElementById(`showAnswer${quizType}P`).innerHTML = randomCardNumber.answer;
+    } else {
+        alert("You need to generate a word first!");
+    }
+}
+
+function showAnswerDutch() {
+    showAnswer('Dutch', flashcardsDutch, randomCardNumberDutch)
+}
+
+function showAnswerGerman() {
+    showAnswer('German', flashcardsGerman, randomCardNumberGerman)
+}
+
+function showAnswerIndonesian() {
+    showAnswer('Indonesian', flashcardsIndonesian, randomCardNumberIndonesian)
+}
+
+function showAnswerMathsB() {
+    showAnswer('MathsB', flashcardsMathsB, randomCardNumberMathsB)
+}
+
+function showAnswerMathsI() {
+    showAnswer('MathsI', flashcardsMathsI, randomCardNumberMathsI)
+}
+
+function showAnswerMathsE() {
+    showAnswer('MathsE', flashcardsMathsE, randomCardNumberMathsE)
+}
+
+function showAnswerCreate() {
+    showAnswer('Create', flashcardsCreate, randomCardNumberCreate)
+}
+
+function removeQ(quizType, questionSet, randomCardNumber) {
+    n = questionSet.indexOf(randomCardNumber)
+    if (questionSet.length >= 1 && document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question) {
+        questionSet.splice(n, 1);
+        document.getElementById(`randomQuestion${quizType}`).innerHTML = `<p id=randomQuestion${quizType}><br></p>`;
+        document.getElementById(`clearText${quizType}`).innerHTML = `<input type=text id=input${quizType} class=form-med placeholder=answer /><button class=button med-btn onclick=submit${quizType}()>Submit answer</button>`;
+        document.getElementById(`result${quizType}P`).innerHTML = `<p id=result${quizType}P><br></p>`;
+        document.getElementById(`showAnswer${quizType}P`).innerHTML = `<p id=showAnswer${quizType}P><br></p>`;
+    } else {
+        alert("You need to generate a word first!");
+    }
+}
+
+function removeQDutch() {
+    removeQ('Dutch', flashcardsDutch, randomCardNumberDutch)
+    updateTotalDutch();
+}
+
+function removeQGerman() {
+    removeQ('German', flashcardsGerman, randomCardNumberGerman)
+    updateTotalGerman();
+}
+
+function removeQIndonesian() {
+    removeQ('Indonesian', flashcardsIndonesian, randomCardNumberIndonesian)
+    updateTotalIndonesian();
+}
+
+function removeQMathsB() {
+    removeQ('MathsB', flashcardsMathsB, randomCardNumberMathsB)
+    updateTotalMathsB();
+}
+
+function removeQMathsI() {
+    removeQ('MathsI', flashcardsMathsI, randomCardNumberMathsI)
+    updateTotalMathsI();
+}
+
+function removeQMathsE() {
+    removeQ('MathsE', flashcardsMathsE, randomCardNumberMathsE)
+    updateTotalMathsE();
+}
+
+function removeQCreate() {
+    removeQ('Create', flashcardsCreate, randomCardNumberCreate)
+    updateTotalCreate();
+}
+
+function submitQ(quizType, questionSet) {
+    if (document.getElementById(`newQ${quizType}`).value !== "" && document.getElementById(`newA${quizType}`).value !== "") {
+        questionSet.push({ id: questionSet.length + 1, question: document.getElementById(`newQ${quizType}`).value, answer: document.getElementById(`newA${quizType}`).value });
+        document.getElementById(`clear${quizType}Submit`).innerHTML = `<input type=text id=newQ${quizType} class=form-med placeholder=question /><input type=text id=newA${quizType} class=form-med placeholder=answer /><button id=submitQ${quizType} class=button med-btn onclick=submitQ${quizType}()>Add question</button>`;
+    } else {
+        alert("Make sure you have added a question and an answer to the corresponding boxes.");
+    }
+}
+
+function submitQDutch() {
+    submitQ('Dutch', flashcardsDutch)
+    updateTotalDutch();
+}
+
+function submitQGerman() {
+    submitQ('German', flashcardsGerman)
+    updateTotalGerman();
+}
+
+function submitQIndonesian() {
+    submitQ('Indonesian', flashcardsIndonesian)
+    updateTotalIndonesian();
+}
+
+function submitQMathsB() {
+    submitQ('MathsB', flashcardsMathsB)
+    updateTotalMathsB();
+}
+
+function submitQMathsI() {
+    submitQ('MathsI', flashcardsMathsI)
+    updateTotalMathsI();
+}
+
+function submitQMathsE() {
+    submitQ('MathsE', flashcardsMathsE)
+    updateTotalMathsE();
+}
+
+function submitQCreate() {
+    submitQ('Create', flashcardsCreate)
+    updateTotalCreate();
+}
+
+function updateTotal(quizType, questionSet, updateTotal) {
+    let totalQuestionsP = document.getElementById(`totalQuestions${quizType}P`);
+    let totalQuestions = questionSet.length;
+    totalQuestionsP.innerHTML = totalQuestions;
+    document.getElementById(`removeQ${quizType}`).addEventListener("click", updateTotal);
+    document.getElementById(`submitQ${quizType}`).addEventListener("click", updateTotal);
+}
+
+function updateTotalDutch() {
+    updateTotal('Dutch', flashcardsDutch, updateTotalDutch)
+}
+
+function updateTotalGerman() {
+    updateTotal('German', flashcardsGerman, updateTotalGerman)
+}
+
+function updateTotalIndonesian() {
+    updateTotal('Indonesian', flashcardsIndonesian, updateTotalIndonesian)
+}
+
+function updateTotalMathsB() {
+    updateTotal('MathsB', flashcardsMathsB, updateTotalMathsB)
+}
+
+function updateTotalMathsI() {
+    updateTotal('MathsI', flashcardsMathsI, updateTotalMathsI)
+}
+
+function updateTotalMathsE() {
+    updateTotal('MathsE', flashcardsMathsE, updateTotalMathsE)
+}
+
+function updateTotalCreate() {
+    updateTotal('Create', flashcardsCreate, updateTotalCreate)
+}
+
+updateTotalDutch();
+updateTotalGerman();
+updateTotalIndonesian();
+updateTotalMathsB();
+updateTotalMathsI();
+updateTotalMathsE();
+updateTotalCreate();

@@ -1,3 +1,5 @@
+// All pre-determined questions here
+
 let flashcardsDutch = [
     { id: 1, question: 'good afternoon', answer: 'goedemiddag' },
     { id: 2, question: 'bicycle', answer: 'fiets' },
@@ -76,6 +78,7 @@ let flashcardsIndonesianNew = [
     { id: 10, question: 'ice cream', answer: 'es krim' },
 ]
 
+// I duplicated some random numbers for the maths questions so that the addition questions wouldn't contain the same integers as the subtraction questions.
 let maths1A = (Math.floor(Math.random() * 8) + 2)
 let maths1B = (Math.floor(Math.random() * 8) + 2)
 let maths2A = (Math.floor(Math.random() * 89) + 11)
@@ -123,7 +126,6 @@ let randomCardNumberMathsI = flashcardsMathsI[Math.floor(Math.random() * flashca
 let randomCardNumberMathsE = flashcardsMathsE[Math.floor(Math.random() * flashcardsMathsE.length)]
 let randomCardNumberCreate = flashcardsCreate[Math.floor(Math.random() * flashcardsCreate.length)]
 
-
 function randomiseNow(quizType, questionSet, randomCardNumber) {
     if (questionSet.length >= 1) {
         document.getElementById(`randomQuestion${quizType}`).innerHTML = randomCardNumber.question;
@@ -131,7 +133,7 @@ function randomiseNow(quizType, questionSet, randomCardNumber) {
         document.getElementById(`result${quizType}P`).innerHTML = `<p id=result${quizType}P><br></p>`;
         document.getElementById(`showAnswer${quizType}P`).innerHTML = `<p id=showAnswer${quizType}P><br></p>`;
     } else {
-        alert("There are no questions left! Click the \"Add bonus word\" button or fill in the forms and add your own questions.")
+        alert("There are no questions left! Click the \"Add new\" button or fill in the forms and add your own questions.")
     }
 }
 
@@ -165,7 +167,7 @@ function randomEqMathsE() {
     randomiseNow('MathsE', flashcardsMathsE, randomCardNumberMathsE)
 }
 
-function randomiseCreate(){
+function randomiseCreate() {
     randomCardNumberCreate = flashcardsCreate[Math.floor(Math.random() * flashcardsCreate.length)]
     randomiseNow('Create', flashcardsCreate, randomCardNumberCreate)
 }
@@ -195,22 +197,24 @@ function getNewIndonesian() {
 }
 
 function mathsGenerator(questionSet, maths1, maths2, mathsOperator) {
-    mathsOperator = ["+", "-", "*", "/"];
+    maths1A = (Math.floor(Math.random() * 8) + 2)
+    maths2A = (Math.floor(Math.random() * 89) + 11)
+    maths2B = (Math.floor(Math.random() * 89) + 11)
+    maths2C = (Math.floor(Math.random() * 89) + 11)
+    maths3A = (Math.floor(Math.random() * 899) + 101)
+    maths3B = (Math.floor(Math.random() * 899) + 101)
+    maths4A = (Math.floor(Math.random() * 8999) + 1001)
+    maths4B = (Math.floor(Math.random() * 8999) + 1001)
+    questionSet.push({ id: questionSet.length + 1, question: (maths1 + mathsOperator + maths2), answer: eval(maths1 + mathsOperator + maths2) });
+}
+
+// I needed an extra function for the division questions as the format is slightly different  
+function mathsGeneratorDivision(questionSet, maths1, maths2) {
     maths1A = (Math.floor(Math.random() * 8) + 2)
     maths1B = (Math.floor(Math.random() * 8) + 2)
     maths2A = (Math.floor(Math.random() * 89) + 11)
     maths2B = (Math.floor(Math.random() * 89) + 11)
-    maths2C = (Math.floor(Math.random() * 89) + 11)
-    maths2D = (Math.floor(Math.random() * 89) + 11)
-    maths3A = (Math.floor(Math.random() * 899) + 101)
-    maths3B = (Math.floor(Math.random() * 899) + 101)
-    maths3C = (Math.floor(Math.random() * 899) + 101)
-    maths3D = (Math.floor(Math.random() * 899) + 101)
-    maths4A = (Math.floor(Math.random() * 8999) + 1001)
-    maths4B = (Math.floor(Math.random() * 8999) + 1001)
-    maths4C = (Math.floor(Math.random() * 8999) + 1001)
-    maths4D = (Math.floor(Math.random() * 8999) + 1001)
-    questionSet.push({ id: questionSet.length + 1, question: (maths1 + mathsOperator[0] + maths2), answer: eval(maths1 + mathsOperator[0] + maths2) });
+    questionSet.push({ id: questionSet.length + 1, question: eval(maths1 + mathsOperator[2] + maths2) + mathsOperator[3] + maths2, answer: maths1 });
 }
 
 function getNewMathsBAdd() {
@@ -229,13 +233,13 @@ function getNewMathsBMultiply() {
 }
 
 function getNewMathsBDivide() {
-    flashcardsMathsB.push({ id: 4, question: eval(maths1A + mathsOperator[2] + maths1B) + mathsOperator[3] + maths1B, answer: maths1A });
+    mathsGeneratorDivision(flashcardsMathsB, maths1A, maths1B)
     updateTotalMathsB();
 }
 
 function getNewMathsIAdd() {
     mathsGenerator(flashcardsMathsI, maths3A, maths3B, mathsOperator[0])
-    updateTotalMathsB();
+    updateTotalMathsI();
 }
 
 function getNewMathsISubtract() {
@@ -249,7 +253,7 @@ function getNewMathsIMultiply() {
 }
 
 function getNewMathsIDivide() {
-    flashcardsMathsI.push({ id: 4, question: eval(maths2A + mathsOperator[2] + maths1A) + mathsOperator[3] + maths1A, answer: maths2A });
+    mathsGeneratorDivision(flashcardsMathsI, maths1A, maths1A)
     updateTotalMathsI();
 }
 
@@ -259,7 +263,7 @@ function getNewMathsEAdd() {
 }
 
 function getNewMathsESubtract() {
-    mathsGenerator(flashcardsMathsE, maths4C, maths4D, mathsOperator[1])
+    mathsGenerator(flashcardsMathsE, maths4A, maths4B, mathsOperator[1])
     updateTotalMathsE();
 }
 
@@ -269,7 +273,7 @@ function getNewMathsEMultiply() {
 }
 
 function getNewMathsEDivide() {
-    flashcardsMathsE.push({ id: 4, question: eval(maths2A + mathsOperator[2] + maths2B) + mathsOperator[3] + maths2B, answer: maths2A });
+    mathsGeneratorDivision(flashcardsMathsE, maths2A, maths2B)
     updateTotalMathsE();
 }
 
@@ -315,7 +319,7 @@ function showAnswer(quizType, questionSet, randomCardNumber) {
     if ((questionSet.length >= 1) && document.getElementById(`randomQuestion${quizType}`).innerHTML == randomCardNumber.question) {
         document.getElementById(`showAnswer${quizType}P`).innerHTML = randomCardNumber.answer;
     } else {
-        alert("You need to generate a word first!");
+        alert("You need to generate a question first!");
     }
 }
 
@@ -356,7 +360,7 @@ function removeQ(quizType, questionSet, randomCardNumber) {
         document.getElementById(`result${quizType}P`).innerHTML = `<p id=result${quizType}P><br></p>`;
         document.getElementById(`showAnswer${quizType}P`).innerHTML = `<p id=showAnswer${quizType}P><br></p>`;
     } else {
-        alert("You need to generate a word first!");
+        alert("You need to generate a question first!");
     }
 }
 
